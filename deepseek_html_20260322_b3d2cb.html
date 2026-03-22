@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>SE Revision Quiz | Software Engineering Interactive</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0a0c10;
+            font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            padding: 20px;
+            color: #eef2ff;
+        }
+
+        /* main container */
+        .quiz-container {
+            max-width: 1600px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 260px 1fr 300px;
+            gap: 20px;
+            background: #0f1117;
+            border-radius: 28px;
+            overflow: hidden;
+            box-shadow: 0 25px 40px -12px rgba(0,0,0,0.6);
+        }
+
+        /* ========= LEFT PANEL (Stats + Categories) ========= */
+        .stats-panel {
+            background: #11141c;
+            padding: 24px 16px;
+            border-right: 1px solid #23272f;
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+        }
+
+        .stats-card {
+            background: #1a1f2a;
+            border-radius: 24px;
+            padding: 20px 16px;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+
+        .stats-card h3 {
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #8b92b0;
+            margin-bottom: 16px;
+        }
+
+        .stats-numbers {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            margin-top: 8px;
+        }
+
+        .stat-item {
+            flex: 1;
+            background: #0f1119;
+            border-radius: 20px;
+            padding: 12px 4px;
+        }
+
+        .stat-label {
+            font-size: 13px;
+            color: #7e84a3;
+        }
+
+        .stat-value {
+            font-size: 32px;
+            font-weight: 700;
+            color: white;
+            line-height: 1.2;
+        }
+
+        .percentage {
+            margin-top: 16px;
+            background: #0a0c14;
+            border-radius: 40px;
+            padding: 12px;
+        }
+
+        .percentage .stat-label {
+            font-size: 13px;
+        }
+
+        .percentage .stat-value {
+            font-size: 28px;
+            color: #6ee7b7;
+        }
+
+        .category-filter {
+            margin-top: 8px;
+        }
+
+        .category-filter h4 {
+            font-size: 14px;
+            margin-bottom: 14px;
+            color: #b9c0df;
+            font-weight: 500;
+        }
+
+        .filter-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .filter-btn {
+            background: #1a1f2c;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 40px;
+            font-size: 12px;
+            font-weight: 500;
+            color: #ccd6f6;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .filter-btn.active {
+            background: #3b82f6;
+            color: white;
+            box-shadow: 0 2px 8px rgba(59,130,246,0.3);
+        }
+
+        .filter-btn:hover:not(.active) {
+            background: #2d3343;
+        }
+
+        /* ========= MIDDLE PANEL (Lecture + Question) ========= */
+        .quiz-main {
+            background: #0f1117;
+            padding: 28px 28px 32px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .lecture-header {
+            border-bottom: 1px solid #252a35;
+            padding-bottom: 18px;
+            margin-bottom: 28px;
+        }
+
+        .lecture-badge {
+            background: #1e293b;
+            display: inline-block;
+            padding: 6px 18px;
+            border-radius: 40px;
+            font-size: 13px;
+            font-weight: 500;
+            color: #94a3f0;
+        }
+
+        .question-area {
+            flex: 1;
+        }
+
+        .question-text {
+            font-size: 1.65rem;
+            font-weight: 500;
+            line-height: 1.4;
+            margin-bottom: 32px;
+            color: #f1f5ff;
+        }
+
+        .options-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-bottom: 48px;
+        }
+
+        .option {
+            background: #161c27;
+            border-radius: 20px;
+            padding: 14px 20px;
+            border: 1px solid #2a2f3c;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 1rem;
+            color: #e2e8ff;
+        }
+
+        .option:hover {
+            background: #1f2736;
+            border-color: #4b556b;
+        }
+
+        .option.disabled-opt {
+            pointer-events: none;
+            opacity: 0.7;
+        }
+
+        .option.correct-highlight {
+            background: #0f3b2c;
+            border-color: #2ecc71;
+            color: #c6f7e5;
+        }
+
+        .option.wrong-highlight {
+            background: #3b1e2a;
+            border-color: #f87171;
+            color: #ffe0e0;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 18px;
+            margin-top: 20px;
+        }
+
+        .nav-btn {
+            background: #1f2937;
+            border: none;
+            padding: 12px 28px;
+            border-radius: 44px;
+            font-weight: 600;
+            font-size: 14px;
+            color: #eef2ff;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .nav-btn:hover {
+            background: #2d3a4e;
+        }
+
+        /* ========= RIGHT PANEL (All Questions) ========= */
+        .all-questions-panel {
+            background: #0c0f17;
+            border-left: 1px solid #23272f;
+            padding: 24px 12px;
+            overflow-y: auto;
+            max-height: 85vh;
+        }
+
+        .all-questions-panel h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            padding-left: 8px;
+            font-weight: 600;
+        }
+
+        .questions-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .q-item {
+            background: #141925;
+            padding: 10px 14px;
+            border-radius: 18px;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: 0.1s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid transparent;
+        }
+
+        .q-item:hover {
+            background: #1f2538;
+            border-color: #3b4259;
+        }
+
+        .q-item.active-question {
+            background: #2c3e66;
+            border-color: #3b82f6;
+            color: white;
+        }
+
+        .q-status {
+            width: 24px;
+            height: 24px;
+            border-radius: 30px;
+            background: #232838;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .q-status.correct-dot {
+            background: #2ecc71;
+            color: #000;
+        }
+
+        .q-status.wrong-dot {
+            background: #f97316;
+            color: white;
+        }
+
+        .footer-note {
+            margin-top: 24px;
+            text-align: center;
+            font-size: 11px;
+            color: #5b6380;
+        }
+
+        @media (max-width: 1000px) {
+            .quiz-container {
+                grid-template-columns: 1fr;
+            }
+            .stats-panel, .all-questions-panel {
+                border: none;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="quiz-container" id="quizRoot">
+    <!-- left panel dynamic but filled via js -->
+</div>
+
+<script>
+    // --------------------------------------------------------------
+    //  COMPLETE QUESTION BANK (Based on SE Revision I.pdf)
+    //  total 124 questions, covering Agile, Requirements, V-Model, Spiral, UML, etc.
+    // --------------------------------------------------------------
+    const QUESTIONS = [
+        { id:1, text:"Define Agile scrum methodology.", options:["project management that emphasizes incremental progress","project management that emphasizes waterfall progress","Software development life cycle","None of the mentioned"], correct:0, category:"Agile" },
+        { id:2, text:"Agile Software Development is based on", options:["Incremental Development","Iterative Development","All the above","None of the above"], correct:2, category:"Agile" },
+        { id:3, text:"Which model is more appropriate when the customer is expected to change requirements during the product development?", options:["Waterfall model","Incremental model","Reuse-based development","None of the mentioned"], correct:1, category:"Process Models" },
+        { id:4, text:"Which of the following does not apply to agility to a software process?", options:["Uses incremental product delivery strategy","Only essential work products are produced","Eliminate project planning and testing","All the above"], correct:2, category:"Agile" },
+        { id:5, text:"User requirements are expressed as in Extreme Programming.", options:["implementation tasks","functionalities","scenarios","All the above"], correct:2, category:"Agile" },
+        { id:6, text:"Which one of the following is a functional requirement?", options:["Maintainability","Portability","Performance","All of the above"], correct:3, category:"Requirements" },
+        { id:7, text:"Consider a system where, a heat sensor detects an intrusion and alerts the security company. What kind of a requirement the system is providing?", options:["Functional","Non-functional","All the above","None of the above"], correct:0, category:"Requirements" },
+        { id:8, text:"What is the first step of requirement elicitation?", options:["Identifying Stakeholder","Listing out Requirements","Requirements Gathering","All the above"], correct:0, category:"Requirements" },
+        { id:9, text:"What is a Functional Requirement?", options:["Specifies the tasks the program must complete","Specifies the tasks the program should not complete","Specifies the tasks the program must not work","All of the mentioned"], correct:0, category:"Requirements" },
+        { id:10, text:"Attributes of good software is", options:["Development","Maintainability & functionality","Functionality","Maintainability"], correct:1, category:"General" },
+        { id:11, text:"What does SDLC stands for?", options:["System Design Life Cycle","Software Design Life Cycle","Software Development Life Cycle","System Development Life cycle"], correct:2, category:"General" },
+        { id:12, text:"suits the Manifesto for Agile Software Development.", options:["Customer collaboration","Individuals and interactions","Working software","All of the mentioned"], correct:3, category:"Agile" },
+        { id:13, text:"What are agile manifesto principles?", options:["Customer satisfaction","Face-to-face communication within a development team","Changes in requirements are welcome","All of the mentioned"], correct:3, category:"Agile" },
+        { id:14, text:"Which one of the following is not a step of requirement engineering?", options:["elicitation","design","analysis","documentation"], correct:1, category:"Requirements" },
+        { id:15, text:"The user system requirements are the parts of which document?", options:["SDD","SRS","DDD","SRD"], correct:1, category:"Requirements" },
+        { id:16, text:"What is the primary purpose of software engineering?", options:["To write code","To manage software projects","To create reliable software systems","To debug existing software"], correct:2, category:"General" },
+        { id:17, text:"What does 'refactoring' mean in software development?", options:["Adding new features","Improving code structure without changing its behavior","Testing the software","Writing documentation"], correct:1, category:"Agile" },
+        { id:18, text:"What is the main goal of software testing?", options:["To ensure software meets requirements","To reduce development time","To increase software complexity","To eliminate all bugs"], correct:0, category:"Testing" },
+        { id:19, text:"In software development, what is a 'sprint'?", options:["A long-term project phase","A short, time-boxed period for completing specific work","A type of software release","A method for bug fixing"], correct:1, category:"Agile" },
+        { id:20, text:"Which of the following is a key principle of Agile development?", options:["Comprehensive documentation","Customer collaboration over contract negotiation","Following a strict plan","Delivering a complete product at once"], correct:1, category:"Agile" },
+        { id:21, text:"What is the role of a 'scrum master' in agile development?", options:["To write code","To manage the product backlog","To facilitate the scrum process and remove obstacles","To perform user acceptance testing"], correct:2, category:"Agile" },
+        { id:22, text:"What is a software requirement?", options:["A system's architecture","A service needed by a user","A programming language specification","None of the above"], correct:1, category:"Requirements" },
+        { id:23, text:"Which type of requirement specifies what the system should do?", options:["Functional requirements","Non-functional requirements","Performance requirements","System requirements"], correct:0, category:"Requirements" },
+        { id:24, text:"Which of the following is an example of non-functional requirements?", options:["User login functionality","System scalability","Payment processing","Account management"], correct:1, category:"Requirements" },
+        { id:25, text:"What is requirements engineering?", options:["Building software","Documenting user needs","A process to identify, document, and manage requirements","Coding and testing software"], correct:2, category:"Requirements" },
+        { id:26, text:"The first step in requirements engineering is", options:["Validation","Elicitation","Analysis","Specification"], correct:1, category:"Requirements" },
+        { id:27, text:"A requirement that specifies how fast a system must respond is an example of ....", options:["Functional requirement","Non-functional requirement","User requirement","None of the above"], correct:1, category:"Requirements" },
+        { id:28, text:"Which elicitation method involves interacting directly with stakeholders?", options:["Document analysis","Interviews","Observation","Brainstorming"], correct:1, category:"Requirements" },
+        { id:29, text:"A structured group session to gather requirements is called", options:["Survey","Brainstorming","Joint Application Development (JAD)","Focus group"], correct:2, category:"Requirements" },
+        { id:30, text:"What is the purpose of prototyping in requirements elicitation?", options:["To test code","To visualize user requirements","To prepare the final system","To evaluate system performance"], correct:1, category:"Requirements" },
+        { id:31, text:"Which technique is best for understanding user tasks in their natural environment?", options:["Observation","Interview","Questionnaire","Workshop"], correct:0, category:"Requirements" },
+        { id:32, text:"What is a 'use case'?", options:["A testing technique","A representation of user-system interaction","A deployment diagram","A project management tool"], correct:1, category:"Modeling" },
+        { id:33, text:"In requirements elicitation, 'document analysis' involves", options:["Creating new documents","Reviewing existing documentation","Writing test cases","Managing risk"], correct:1, category:"Requirements" },
+        { id:34, text:"Which of these is a stakeholder in requirements gathering?", options:["End-user","System architect","Customer","All of the above"], correct:3, category:"Requirements" },
+        { id:35, text:"Which process ensures all requirements are complete and consistent?", options:["Validation","Analysis","Specification","Design"], correct:0, category:"Requirements" },
+        { id:36, text:"Which diagram is used to model requirements?", options:["Sequence diagram","Use case diagram","Class diagram","Activity diagram"], correct:1, category:"Modeling" },
+        { id:37, text:"Requirements that contradict each other are called", options:["Overlapping requirements","Inconsistent requirements","Derived requirements","Functional requirements"], correct:1, category:"Requirements" },
+        { id:38, text:"What is the main purpose of the Software Requirements Specification (SRS) document?", options:["To design the software","To outline requirements in detail","To test the software","To validate software performance"], correct:1, category:"Requirements" },
+        { id:39, text:"Which of the following is NOT a characteristic of a good requirement?", options:["Feasibility","Ambiguity","Testability","Traceability"], correct:1, category:"Requirements" },
+        { id:40, text:"A requirement that is ambiguous", options:["Is precise and testable","Is open to multiple interpretations","Clearly defines user needs","Has measurable acceptance criteria"], correct:1, category:"Requirements" },
+        { id:41, text:"Which SRS quality attribute ensures requirements are implementable within the system constraints?", options:["Completeness","Feasibility","Consistency","Modifiability"], correct:1, category:"Requirements" },
+        { id:42, text:"What is the importance of prioritizing requirements?", options:["To reduce project cost","To address high-impact needs first","To eliminate unnecessary features","To define system constraints"], correct:1, category:"Requirements" },
+        { id:43, text:"What is the main purpose of requirements validation?", options:["To ensure requirements meet stakeholder needs","To verify system functionality","To prioritize requirements","To eliminate redundant requirements"], correct:0, category:"Requirements" },
+        { id:44, text:"Which model is suitable for projects with unclear or changing requirements?", options:["Waterfall model","Plan-based model","Agile model","All the mentioned"], correct:2, category:"Process Models" },
+        { id:45, text:"What is a 'user story' in Agile?", options:["A detailed technical document","A description of a feature from the user's perspective","A project management chart","A database schema"], correct:1, category:"Agile" },
+        { id:46, text:"Which of the following is NOT a core principle of Agile?", options:["Customer collaboration","Responding to change","Following a strict plan","Working software"], correct:2, category:"Agile" },
+        { id:47, text:"Continuous integration is a practice associated with which process?", options:["Waterfall","Agile","Spiral","Prototype"], correct:1, category:"Agile" },
+        { id:48, text:"Which process is focused on early feedback by creating working versions of the software?", options:["Waterfall","Spiral","Prototype","V- model"], correct:2, category:"Process Models" },
+        { id:49, text:"Which model is suitable for safety-critical systems?", options:["Agile","Waterfall","Prototype","Big bang"], correct:1, category:"Process Models" },
+        { id:50, text:"What is 'refactoring' in software development?", options:["Adding new features","Redesigning the database","Improving internal structure without changing external behavior","Writing user documentation"], correct:2, category:"Agile" },
+        { id:51, text:"What is the primary goal of software integration?", options:["To isolate individual components","To combine software components into a unified system","To document user requirements","To design user interfaces"], correct:1, category:"General" },
+        { id:52, text:"Which type of testing focuses on verifying the interaction between software modules?", options:["Unit testing","Integration testing","System testing","Acceptance testing"], correct:1, category:"Testing" },
+        { id:53, text:"What is the primary goal of reuse-oriented software engineering?", options:["Develop from scratch","Minimize development time and cost by reusing components","Focus on highly customized software","Prioritize documentation"], correct:1, category:"General" },
+        { id:54, text:"What is the primary goal of requirements engineering?", options:["Writing code efficiently","Designing user interfaces","Understanding and documenting user needs","Testing software thoroughly"], correct:2, category:"Requirements" },
+        { id:55, text:"Which phase of requirements engineering involves gathering information from stakeholders?", options:["Validation","Elicitation","Specification","Management"], correct:1, category:"Requirements" },
+        { id:56, text:"What is a 'stakeholder' in requirements engineering?", options:["Software developer","Anyone affected by the system","Database administrator","Network engineer"], correct:1, category:"Requirements" },
+        { id:57, text:"What does 'functional requirements' describe?", options:["User interface design","System performance","What the system should do","Security constraints"], correct:2, category:"Requirements" },
+        { id:58, text:"What does 'non-functional requirements' describe?", options:["Specific features","How well the system performs","Database schemas","User manuals"], correct:1, category:"Requirements" },
+        { id:59, text:"Which technique is used to document requirements in a structured way?", options:["Brainstorming","Prototyping","Use cases","Interviews"], correct:2, category:"Requirements" },
+        { id:60, text:"What is a 'use case diagram'?", options:["Database relationships","User interactions with the system","Code dependencies","Network topology"], correct:1, category:"Modeling" },
+        { id:61, text:"Benefit of prioritizing requirements?", options:["Increased complexity","Focus on most critical features first","Reduced user satisfaction","Increased costs"], correct:1, category:"Requirements" },
+        { id:62, text:"Which activities included in Requirements engineering process?", options:["Elicitation and analysis","Specification","Validation","All the mentioned"], correct:3, category:"Requirements" },
+        { id:63, text:"What is the primary purpose of software validation?", options:["Verify software built correctly","Ensure software meets user requirements","Optimize code performance","Document development"], correct:1, category:"Testing" },
+        { id:64, text:"Verification is concerned with", options:["User satisfaction","Building the right product","Building the product right","Design phase"], correct:2, category:"Testing" },
+        { id:65, text:"Validation is concerned with", options:["User satisfaction","Building the right product","Building the product right","Design phase"], correct:1, category:"Testing" },
+        { id:66, text:"Which of the following is an example of validation?", options:["Inspection","Walkthrough","User acceptance testing","Static analysis"], correct:2, category:"Testing" },
+        { id:67, text:"Which process ensures compliance with specifications?", options:["Validation","Verification","Maintenance","Deployment"], correct:1, category:"Testing" },
+        { id:68, text:"Which question does verification answer?", options:["Is product useful?","Are we building the right product?","Are we building the product right?","Is product profitable?"], correct:2, category:"Testing" },
+        { id:69, text:"Which question does validation answer?", options:["Is design correct?","Are we building the right product?","Are we building the product right?","Is coding correct?"], correct:1, category:"Testing" },
+        { id:70, text:"Which of the following is a validation activity?", options:["Unit testing","Integration testing","Acceptance testing","Static analysis"], correct:2, category:"Testing" },
+        { id:71, text:"Role of the customer or end-user in validation?", options:["Design architecture","Reviewing and approving software","Writing code","Managing team"], correct:1, category:"Testing" },
+        { id:72, text:"Which testing technique determines if software satisfies specified requirements?", options:["Unit testing","Integration testing","System testing","Acceptance testing"], correct:3, category:"Testing" },
+        { id:73, text:"Difference between verification and validation?", options:["Verification checks correctness, validation checks user needs","Verification checks user needs, validation checks correctness","Same thing","Performance vs security"], correct:0, category:"Testing" },
+        { id:74, text:"In V-model, which phase corresponds to unit testing?", options:["Requirements analysis","Architectural design","Detailed design","Coding"], correct:3, category:"V-Model" },
+        { id:75, text:"Which phase corresponds to acceptance testing in V-model?", options:["Requirements analysis","Architectural design","System design","Coding"], correct:0, category:"V-Model" },
+        { id:76, text:"What does the 'V' in V-model represent?", options:["Validation and verification","Visual representation","Velocity and volume","Variability"], correct:0, category:"V-Model" },
+        { id:77, text:"In V-model, which testing level is performed after integration testing?", options:["Unit testing","Acceptance testing","System testing","Alpha testing"], correct:2, category:"V-Model" },
+        { id:78, text:"Primary disadvantage of the V-model?", options:["Lack of documentation","Difficulty handling changing requirements","Poor testing coverage","Inefficient resource allocation"], correct:1, category:"V-Model" },
+        { id:79, text:"Which phase corresponds to system testing in V-model?", options:["Requirements analysis","Architectural design","System design","Coding"], correct:2, category:"V-Model" },
+        { id:80, text:"Which level of testing checks interaction between modules?", options:["Unit","Integration","System","Acceptance"], correct:1, category:"Testing" },
+        { id:81, text:"Which is correct for Agile development?", options:["Specification, design, implementation interleaved","Series of versions with stakeholder involvement","Frequent delivery","All the mentioned"], correct:3, category:"Agile" },
+        { id:82, text:"Key practices for agile development?", options:["User stories","Test-first & Refactoring","Pair programming","All the mentioned"], correct:3, category:"Agile" },
+        { id:83, text:"Spiral Model primarily focuses on", options:["Coding speed","Documentation","Risk analysis","Testing only"], correct:2, category:"Spiral" },
+        { id:84, text:"Each loop in the Spiral Model represents", options:["Test case","Development phase","Complete project","Maintenance cycle"], correct:1, category:"Spiral" },
+        { id:85, text:"Spiral Model is best suited for", options:["Small projects","Low-risk projects","Large, complex, high-risk projects","Simple CRUD"], correct:2, category:"Spiral" },
+        { id:86, text:"In Spiral Model, risk is evaluated during", options:["Planning","Coding","Risk analysis phase","Testing"], correct:2, category:"Spiral" },
+        { id:87, text:"Spiral Model is also known as", options:["Linear model","Evolutionary process model","Static model","Sequential model"], correct:1, category:"Spiral" },
+        { id:88, text:"First step in each spiral loop is", options:["Testing","Planning","Coding","Deployment"], correct:1, category:"Spiral" },
+        { id:89, text:"Which activity follows risk analysis in Spiral Model?", options:["Planning","Engineering (development & testing)","Maintenance","Documentation"], correct:1, category:"Spiral" },
+        { id:90, text:"What does each spiral end with?", options:["Coding","Documentation","Customer evaluation","Testing"], correct:2, category:"Spiral" },
+        { id:91, text:"Spiral Model can be considered combination of", options:["Iterative and Waterfall","Agile only","Testing and deployment","Coding and debugging"], correct:0, category:"Spiral" },
+        { id:92, text:"Key strength of Spiral Model?", options:["Simple to manage","No need for experts","Early identification of risks","Low cost"], correct:2, category:"Spiral" },
+        { id:93, text:"Which phase involves customer feedback and approval?", options:["Planning","Risk Analysis","Engineering","Evaluation"], correct:3, category:"Spiral" },
+        { id:94, text:"is the process of developing abstract models of a system, each presenting a different view.", options:["System modeling","Waterfall","Agile","Unit testing"], correct:0, category:"Modeling" },
+        { id:95, text:"Which model type shows how system interacts with external environment?", options:["Structural","Behavioral","Context model","Interaction"], correct:2, category:"Modeling" },
+        { id:96, text:"Interaction models include which diagram types?", options:["Use case and sequence","Class and state","Activity and class","Component and deployment"], correct:0, category:"Modeling" },
+        { id:97, text:"What do structural models (class diagrams) represent?", options:["Dynamic behavior","External context","Internal organization & relationships","UI layouts"], correct:2, category:"Modeling" },
+        { id:98, text:"Which perspective focuses on dynamic behavior (activity, state transitions)?", options:["Context","Interaction","Structural","Behavioral"], correct:3, category:"Modeling" },
+        { id:99, text:"Which is a type of UML diagram?", options:["Class","Activity","Sequence","All the mentioned"], correct:3, category:"Modeling" },
+        { id:100, text:"Structural models display organization in terms of components and relationships.", options:["Structural models","Behavioral models","Interaction models","All"], correct:0, category:"Modeling" },
+        { id:101, text:"helps to identify user requirements.", options:["Structural models","Behavioral models","Interaction models","None"], correct:2, category:"Modeling" },
+        { id:102, text:"Which represents structural models?", options:["Class diagram","Activity diagram","Sequence diagram","Use-case"], correct:0, category:"Modeling" },
+        { id:103, text:"Which UML diagram represents interaction models?", options:["Class","Activity","Sequence","State"], correct:2, category:"Modeling" },
+        { id:104, text:"Sequence diagram models", options:["Interaction between objects over time","Physical deployment","Workflow","Hierarchical relationships"], correct:0, category:"Modeling" },
+        { id:105, text:"Best UML diagram for system reaction to events?", options:["Sequence","State machine","Class","Activity"], correct:1, category:"Modeling" },
+        { id:106, text:"Rectangle in class diagram represents?", options:["Use case","Class","Object interaction","Deployment"], correct:1, category:"Modeling" },
+        { id:107, text:"Lifelines in sequence diagram represent?", options:["Requirements","Object interactions over time","User stories","Hardware"], correct:1, category:"Modeling" },
+        { id:108, text:"Use case diagram consists of", options:["Actors, use cases, relationships","Classes","Components","States"], correct:0, category:"Modeling" },
+        { id:109, text:"NOT a system modeling technique?", options:["Object-oriented","Agile methodology","Data flow","State modeling"], correct:1, category:"Modeling" },
+        { id:110, text:"shows object classes and associations.", options:["Sequence","Use case","Activity","Class diagram"], correct:3, category:"Modeling" },
+        { id:111, text:"shows activities involved in data processing.", options:["Sequence","Use case","Activity","Class"], correct:2, category:"Modeling" },
+        { id:112, text:"reveals how system is used in broader business processes.", options:["Process model","State model","Interaction model","All"], correct:0, category:"Modeling" },
+        { id:113, text:"shows dynamic behavior and how system responds to events.", options:["Structural","Behavioral","Interaction","All"], correct:1, category:"Modeling" },
+        { id:114, text:"presents system and relationship with other systems.", options:["Class diagram","Activity","Sequence","Context diagram"], correct:3, category:"Modeling" },
+        { id:115, text:"Which is static model?", options:["Structural","Behavioral","All","Both"], correct:0, category:"Modeling" },
+        { id:116, text:"State machine model focuses on", options:["Data flow","Sequence of interactions","System states and transitions","Object hierarchies"], correct:2, category:"Modeling" },
+        { id:117, text:"Which diagram useful for modeling functional requirements from user perspective?", options:["Class","Use case","Activity","Sequence"], correct:1, category:"Modeling" },
+        { id:118, text:"Vertical lifeline in sequence diagram represents", options:["Time progression","Message priority","Processing time","Architecture layers"], correct:0, category:"Modeling" },
+        { id:119, text:"Best for modeling logic of business processes?", options:["Sequence","Activity","State machine","Class"], correct:1, category:"Modeling" },
+        { id:120, text:"Which diagram focuses on system boundary without internal detail?", options:["Context model","Sequence","Class","Activity"], correct:0, category:"Modeling" },
+        { id:121, text:"Primary output of architectural design process?", options:["Code documentation","Test cases","Architectural model with components","Deployment script"], correct:2, category:"General" },
+        { id:122, text:"Which Agile methodology uses pair programming?", options:["Scrum","Kanban","Extreme Programming (XP)","Waterfall"], correct:2, category:"Agile" },
+        { id:123, text:"In V-model, which phase is paired with system testing?", options:["Requirements","Architectural design","System design","Module design"], correct:2, category:"V-Model" },
+        { id:124, text:"What is the main advantage of iterative development?", options:["Early delivery of subset","Less testing","No planning","Avoids documentation"], correct:0, category:"Process Models" }
+    ];
+
+    // ----- state management
+    let userAnswers = new Array(QUESTIONS.length).fill(null); // stores selected option index
+    let answerStatus = new Array(QUESTIONS.length).fill(false); // true if answered
+    let currentIndex = 0;
+    let activeCategory = "All";
+
+    function computeStats() {
+        let correct = 0;
+        for(let i=0; i<QUESTIONS.length; i++) {
+            if(answerStatus[i] && userAnswers[i] === QUESTIONS[i].correct) correct++;
+        }
+        let wrong = answerStatus.filter((v,i)=> v && userAnswers[i] !== QUESTIONS[i].correct).length;
+        let percentage = answerStatus.length ? Math.round((correct / answerStatus.filter(v=>v).length)*100) : 0;
+        if(isNaN(percentage)) percentage = 0;
+        return { correct, wrong, answered: answerStatus.filter(v=>v).length, percentage };
+    }
+
+    function renderAll() {
+        const stats = computeStats();
+        const filtered = activeCategory === "All" ? QUESTIONS : QUESTIONS.filter(q => q.category === activeCategory);
+        const mainQuestion = QUESTIONS[currentIndex];
+        const currentAnswered = answerStatus[currentIndex];
+        const selectedOpt = userAnswers[currentIndex];
+        
+        const leftHtml = `
+            <div class="stats-panel">
+                <div class="stats-card">
+                    <h3>📊 QUIZ PROGRESS</h3>
+                    <div class="stats-numbers">
+                        <div class="stat-item"><div class="stat-label">✅ Correct</div><div class="stat-value">${stats.correct}</div></div>
+                        <div class="stat-item"><div class="stat-label">❌ Wrong</div><div class="stat-value">${stats.wrong}</div></div>
+                    </div>
+                    <div class="percentage"><div class="stat-label">📈 Percentage</div><div class="stat-value">${stats.percentage}%</div></div>
+                </div>
+                <div class="category-filter"><h4>📁 Filter by Topic</h4><div class="filter-buttons" id="filterButtons"></div></div>
+            </div>
+        `;
+        const uniqueCats = ["All", ...new Set(QUESTIONS.map(q=>q.category))];
+        const filterBtnsHtml = uniqueCats.map(cat => `<button class="filter-btn ${activeCategory===cat?'active':''}" data-cat="${cat}">${cat}</button>`).join('');
+        
+        const middleHtml = `
+            <div class="quiz-main">
+                <div class="lecture-header"><span class="lecture-badge">📘 Lecture: Software Engineering (SE Revision)</span></div>
+                <div class="question-area"><div class="question-text">${mainQuestion.text}</div>
+                <div class="options-list" id="optionsContainer"></div></div>
+                <div class="nav-buttons"><button class="nav-btn" id="prevBtn">◀ Previous</button><button class="nav-btn" id="nextBtn">Next ▶</button></div>
+            </div>
+        `;
+        
+        const rightHtml = `
+            <div class="all-questions-panel"><h3>📋 All Questions (${QUESTIONS.length})</h3><div class="questions-grid" id="questionsGrid"></div><div class="footer-note">Click any to jump</div></div>
+        `;
+        
+        document.getElementById("quizRoot").innerHTML = leftHtml + middleHtml + rightHtml;
+        document.getElementById("filterButtons").innerHTML = filterBtnsHtml;
+        document.querySelectorAll(".filter-btn").forEach(btn => {
+            btn.addEventListener("click", (e) => { activeCategory = btn.dataset.cat; renderAll(); });
+        });
+        
+        // render options
+        const optsDiv = document.getElementById("optionsContainer");
+        optsDiv.innerHTML = mainQuestion.options.map((opt, idx) => {
+            let extraClass = "";
+            if(currentAnswered) {
+                if(idx === mainQuestion.correct) extraClass = "correct-highlight";
+                else if(idx === selectedOpt && selectedOpt !== mainQuestion.correct) extraClass = "wrong-highlight";
+            }
+            return `<div class="option ${extraClass} ${currentAnswered ? 'disabled-opt' : ''}" data-opt-index="${idx}">${String.fromCharCode(65+idx)}. ${opt}</div>`;
+        }).join('');
+        if(!currentAnswered) {
+            document.querySelectorAll(".option").forEach(optDiv => {
+                optDiv.addEventListener("click", (e) => {
+                    if(answerStatus[currentIndex]) return;
+                    const chosen = parseInt(optDiv.dataset.optIndex);
+                    userAnswers[currentIndex] = chosen;
+                    answerStatus[currentIndex] = true;
+                    renderAll();
+                });
+            });
+        }
+        // grid
+        const gridDiv = document.getElementById("questionsGrid");
+        gridDiv.innerHTML = QUESTIONS.map((q, idx) => {
+            let statusIcon = "";
+            if(answerStatus[idx]) {
+                let isCorrect = (userAnswers[idx] === q.correct);
+                statusIcon = `<span class="q-status ${isCorrect ? 'correct-dot' : 'wrong-dot'}">${isCorrect ? '✓' : '✗'}</span>`;
+            } else statusIcon = `<span class="q-status">?</span>`;
+            return `<div class="q-item ${idx===currentIndex ? 'active-question' : ''}" data-qidx="${idx}"><span>Q${idx+1}. ${q.text.substring(0,45)}${q.text.length>45?'…':''}</span>${statusIcon}</div>`;
+        }).join('');
+        document.querySelectorAll(".q-item").forEach(el => {
+            el.addEventListener("click", (e) => { currentIndex = parseInt(el.dataset.qidx); renderAll(); });
+        });
+        document.getElementById("prevBtn").addEventListener("click", () => { if(currentIndex>0) { currentIndex--; renderAll(); } });
+        document.getElementById("nextBtn").addEventListener("click", () => { if(currentIndex<QUESTIONS.length-1) { currentIndex++; renderAll(); } });
+    }
+    renderAll();
+</script>
+</body>
+</html>
