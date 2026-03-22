@@ -1,0 +1,262 @@
+[
+  {
+    "id": 1,
+    "text": "Define Agile scrum methodology.",
+    "options": [
+      "project management that emphasizes incremental progress",
+      "project management that emphasizes waterfall progress",
+      "Software development life cycle",
+      "None of the mentioned"
+    ],
+    "correct": 0,
+    "category": "Chapter 3: Agile Software Development",
+    "explanation": "Agile Scrum is a project management framework that emphasizes incremental progress through short iterations called sprints, delivering working software frequently rather than following a rigid waterfall approach."
+  },
+  {
+    "id": 2,
+    "text": "Agile Software Development is based on",
+    "options": [
+      "Incremental Development",
+      "Iterative Development",
+      "All the above",
+      "None of the above"
+    ],
+    "correct": 2,
+    "category": "Chapter 3: Agile Software Development",
+    "explanation": "Agile combines both incremental development (building features in small pieces) and iterative development (repeating cycles to improve), making it flexible and adaptive to change."
+  },
+  {
+    "id": 3,
+    "text": "Which model is more appropriate when the customer is expected to change requirements during the product development?",
+    "options": [
+      "Waterfall model",
+      "Incremental model",
+      "Reuse-based development",
+      "None of the mentioned"
+    ],
+    "correct": 1,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "The Incremental model delivers working pieces of software in stages, allowing customers to see progress and change requirements between increments, unlike Waterfall which is rigid and linear."
+  },
+  {
+    "id": 4,
+    "text": "Which of the following does NOT apply to agility to a software process?",
+    "options": [
+      "Uses incremental product delivery strategy",
+      "Only essential work products are produced",
+      "Eliminate project planning and testing",
+      "All the above"
+    ],
+    "correct": 2,
+    "category": "Chapter 3: Agile Software Development",
+    "explanation": "Agile does NOT eliminate planning and testing - in fact, Agile emphasizes continuous testing and adaptive planning. The statement 'eliminate project planning and testing' contradicts Agile principles."
+  },
+  {
+    "id": 5,
+    "text": "User requirements are expressed as in Extreme Programming.",
+    "options": [
+      "implementation tasks",
+      "functionalities",
+      "scenarios",
+      "All the above"
+    ],
+    "correct": 2,
+    "category": "Chapter 3: Agile Software Development",
+    "explanation": "In Extreme Programming (XP), user requirements are expressed as 'user stories' or 'scenarios' that describe specific user interactions with the system from the user's perspective."
+  },
+  {
+    "id": 6,
+    "text": "Which one of the following is a functional requirement?",
+    "options": [
+      "Maintainability",
+      "Portability",
+      "Performance",
+      "All of the above"
+    ],
+    "correct": 3,
+    "category": "Chapter 4: Requirements Engineering",
+    "explanation": "Actually, maintainability, portability, and performance are ALL non-functional requirements. This question may be testing your understanding - functional requirements specify WHAT the system does, while these specify HOW WELL it does it."
+  },
+  {
+    "id": 7,
+    "text": "Consider a system where, a heat sensor detects an intrusion and alerts the security company. What kind of a requirement the system is providing?",
+    "options": [
+      "Functional",
+      "Non-functional",
+      "All the above",
+      "None of the above"
+    ],
+    "correct": 0,
+    "category": "Chapter 4: Requirements Engineering",
+    "explanation": "This is a functional requirement because it describes a specific action or task the system must perform: detect intrusion and trigger an alert. It defines WHAT the system does."
+  },
+  {
+    "id": 8,
+    "text": "What is the first step of requirement elicitation?",
+    "options": [
+      "Identifying Stakeholder",
+      "Listing out Requirements",
+      "Requirements Gathering",
+      "All the above"
+    ],
+    "correct": 0,
+    "category": "Chapter 4: Requirements Engineering",
+    "explanation": "Before gathering requirements, you must first identify WHO the stakeholders are (users, customers, managers, etc.) because they are the sources of requirements. You can't gather without knowing who to ask."
+  },
+  {
+    "id": 9,
+    "text": "What is a Functional Requirement?",
+    "options": [
+      "Specifies the tasks the program must complete",
+      "Specifies the tasks the program should not complete",
+      "Specifies the tasks the program must not work",
+      "All of the mentioned"
+    ],
+    "correct": 0,
+    "category": "Chapter 4: Requirements Engineering",
+    "explanation": "Functional requirements define what the system MUST DO - specific behaviors, functions, and tasks that the system must perform to meet user needs."
+  },
+  {
+    "id": 10,
+    "text": "Attributes of good software is",
+    "options": [
+      "Development",
+      "Maintainability & functionality",
+      "Functionality",
+      "Maintainability"
+    ],
+    "correct": 1,
+    "category": "Chapter 1: Introduction to Software Engineering",
+    "explanation": "Good software isn't just about functionality (does it work). It must also be maintainable (can it be fixed and updated easily). Both are essential attributes of quality software."
+  },
+  {
+    "id": 11,
+    "text": "What does SDLC stands for?",
+    "options": [
+      "System Design Life Cycle",
+      "Software Design Life Cycle",
+      "Software Development Life Cycle",
+      "System Development Life cycle"
+    ],
+    "correct": 2,
+    "category": "Chapter 1: Introduction to Software Engineering",
+    "explanation": "SDLC stands for Software Development Life Cycle - the foundational framework outlining all stages involved in software creation from planning through maintenance."
+  },
+  {
+    "id": 12,
+    "text": "suits the Manifesto for Agile Software Development.",
+    "options": [
+      "Customer collaboration",
+      "Individuals and interactions",
+      "Working software",
+      "All of the mentioned"
+    ],
+    "correct": 3,
+    "category": "Chapter 3: Agile Software Development",
+    "explanation": "The Agile Manifesto values all four: individuals and interactions over processes, working software over documentation, customer collaboration over contract negotiation, and responding to change over following a plan."
+  },
+  {
+    "id": 13,
+    "text": "What are agile manifesto principles?",
+    "options": [
+      "Customer satisfaction",
+      "Face-to-face communication within a development team",
+      "Changes in requirements are welcome",
+      "All of the mentioned"
+    ],
+    "correct": 3,
+    "category": "Chapter 3: Agile Software Development",
+    "explanation": "Agile principles include early and continuous delivery, welcoming changing requirements, frequent communication, and building projects around motivated individuals. Customer satisfaction through early delivery is the highest priority."
+  },
+  {
+    "id": 14,
+    "text": "Which one of the following is not a step of requirement engineering?",
+    "options": [
+      "elicitation",
+      "design",
+      "analysis",
+      "documentation"
+    ],
+    "correct": 1,
+    "category": "Chapter 4: Requirements Engineering",
+    "explanation": "Design is NOT part of requirements engineering. Requirements engineering ends with validated requirements; design is a separate phase that comes after, where you decide HOW to build what the requirements specify."
+  },
+  {
+    "id": 15,
+    "text": "The user system requirements are the parts of which document?",
+    "options": [
+      "SDD",
+      "SRS",
+      "DDD",
+      "SRD"
+    ],
+    "correct": 1,
+    "category": "Chapter 4: Requirements Engineering",
+    "explanation": "User and system requirements are documented in the Software Requirements Specification (SRS) document. It's the formal document that captures all requirements agreed upon with stakeholders."
+  },
+  {
+    "id": 16,
+    "text": "What is the primary purpose of software engineering?",
+    "options": [
+      "To write code",
+      "To manage software projects",
+      "To create reliable software systems",
+      "To debug existing software"
+    ],
+    "correct": 2,
+    "category": "Chapter 1: Introduction to Software Engineering",
+    "explanation": "Software engineering is a structured approach to creating reliable, high-quality software systems that meet user needs. It's not just coding - it's about systematic, disciplined, quantifiable approaches."
+  },
+  {
+    "id": 17,
+    "text": "What does 'refactoring' mean in software development?",
+    "options": [
+      "Adding new features",
+      "Improving code structure without changing its behavior",
+      "Testing the software",
+      "Writing documentation"
+    ],
+    "correct": 1,
+    "category": "Chapter 3: Agile Software Development",
+    "explanation": "Refactoring means improving the internal structure and design of existing code WITHOUT changing its external behavior. It keeps the code clean, maintainable, and reduces technical debt."
+  },
+  {
+    "id": 18,
+    "text": "What is the main goal of software testing?",
+    "options": [
+      "To ensure software meets requirements",
+      "To reduce development time",
+      "To increase software complexity",
+      "To eliminate all bugs"
+    ],
+    "correct": 0,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "The main goal is to verify that the software meets specified requirements and works as intended. While finding bugs is part of it, the ultimate goal is ensuring requirements are satisfied."
+  },
+  {
+    "id": 19,
+    "text": "In software development, what is a 'sprint'?",
+    "options": [
+      "A long-term project phase",
+      "A short, time-boxed period for completing specific work",
+      "A type of software release",
+      "A method for bug fixing"
+    ],
+    "correct": 1,
+    "category": "Chapter 3: Agile Software Development",
+    "explanation": "A sprint is a short, time-boxed iteration (typically 1-4 weeks) in Scrum where a team completes a set amount of work from the product backlog to deliver a potentially shippable product increment."
+  },
+  {
+    "id": 20,
+    "text": "Which of the following is a key principle of Agile development?",
+    "options": [
+      "Comprehensive documentation",
+      "Customer collaboration over contract negotiation",
+      "Following a strict plan",
+      "Delivering a complete product at once"
+    ],
+    "correct": 1,
+    "category": "Chapter 3: Agile Software Development",
+    "explanation": "Agile values customer collaboration over contract negotiation. This means working closely with customers throughout development rather than just agreeing on a fixed contract upfront and then disappearing."
+  }
+]

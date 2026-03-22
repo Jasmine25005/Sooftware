@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Software Engineering Quiz | SE Revision</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <!-- Left Panel: Stats & Chapters -->
+        <div class="stats-panel">
+            <div class="stats-card">
+                <h3>📊 QUIZ PROGRESS</h3>
+                <div class="stats-numbers">
+                    <div class="stat-item">
+                        <div class="stat-label">✅ Correct</div>
+                        <div class="stat-value" id="correctCount">0</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">❌ Wrong</div>
+                        <div class="stat-value" id="wrongCount">0</div>
+                    </div>
+                </div>
+                <div class="percentage">
+                    <div class="stat-label">📈 Percentage</div>
+                    <div class="stat-value" id="percentageValue">0%</div>
+                </div>
+                <div class="answered-badge">
+                    <div class="stat-label">📝 Answered</div>
+                    <div class="stat-value" id="answeredCount">0</div>
+                </div>
+            </div>
+
+            <div class="chapters-filter">
+                <h4>📚 Chapters</h4>
+                <div class="chapters-list" id="chaptersList"></div>
+            </div>
+        </div>
+
+        <!-- Middle Panel: Lecture & Question -->
+        <div class="quiz-main">
+            <div class="lecture-header">
+                <span class="lecture-badge" id="currentChapter">📘 Software Engineering</span>
+            </div>
+            <div class="question-area">
+                <div class="question-text" id="questionText">Loading questions...</div>
+                <div class="options-list" id="optionsContainer"></div>
+                <div class="explanation-box" id="explanationBox" style="display: none;">
+                    <div class="explanation-title">💡 Explanation</div>
+                    <div class="explanation-text" id="explanationText"></div>
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <button class="nav-btn" id="prevBtn">◀ Previous</button>
+                <button class="nav-btn" id="nextBtn">Next ▶</button>
+            </div>
+        </div>
+
+        <!-- Right Panel: All Questions -->
+        <div class="all-questions-panel">
+            <h3>📋 All Questions</h3>
+            <div class="questions-grid" id="questionsGrid"></div>
+            <div class="footer-note">Click any question to jump</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
