@@ -101,7 +101,7 @@
     ],
     "correct": 0,
     "category": "Chapter 4: Requirements Engineering",
-    "explanation": "Before gathering requirements, you must first identify WHO the stakeholders are (users, customers, managers, etc.) because they are the sources of requirements. You can't gather without knowing who to ask."
+    "explanation": "Before gathering requirements, you must first identify WHO the stakeholders are (users, customers, managers, etc.) because they are the sources of requirements."
   },
   {
     "id": 9,
@@ -127,7 +127,7 @@
     ],
     "correct": 1,
     "category": "Chapter 1: Introduction to Software Engineering",
-    "explanation": "Good software isn't just about functionality (does it work). It must also be maintainable (can it be fixed and updated easily). Both are essential attributes of quality software."
+    "explanation": "Good software isn't just about functionality. It must also be maintainable so it can be fixed and updated easily. Both are essential attributes."
   },
   {
     "id": 11,
@@ -153,7 +153,7 @@
     ],
     "correct": 3,
     "category": "Chapter 3: Agile Software Development",
-    "explanation": "The Agile Manifesto values all four: individuals and interactions over processes, working software over documentation, customer collaboration over contract negotiation, and responding to change over following a plan."
+    "explanation": "The Agile Manifesto values all four: individuals and interactions, working software, customer collaboration, and responding to change."
   },
   {
     "id": 13,
@@ -166,7 +166,7 @@
     ],
     "correct": 3,
     "category": "Chapter 3: Agile Software Development",
-    "explanation": "Agile principles include early and continuous delivery, welcoming changing requirements, frequent communication, and building projects around motivated individuals. Customer satisfaction through early delivery is the highest priority."
+    "explanation": "Agile principles include early delivery, welcoming changing requirements, frequent communication, and customer satisfaction through early delivery."
   },
   {
     "id": 14,
@@ -179,7 +179,7 @@
     ],
     "correct": 1,
     "category": "Chapter 4: Requirements Engineering",
-    "explanation": "Design is NOT part of requirements engineering. Requirements engineering ends with validated requirements; design is a separate phase that comes after, where you decide HOW to build what the requirements specify."
+    "explanation": "Design is NOT part of requirements engineering. Requirements engineering ends with validated requirements; design is a separate phase."
   },
   {
     "id": 15,
@@ -192,7 +192,7 @@
     ],
     "correct": 1,
     "category": "Chapter 4: Requirements Engineering",
-    "explanation": "User and system requirements are documented in the Software Requirements Specification (SRS) document. It's the formal document that captures all requirements agreed upon with stakeholders."
+    "explanation": "User and system requirements are documented in the Software Requirements Specification (SRS) document."
   },
   {
     "id": 16,
@@ -205,7 +205,7 @@
     ],
     "correct": 2,
     "category": "Chapter 1: Introduction to Software Engineering",
-    "explanation": "Software engineering is a structured approach to creating reliable, high-quality software systems that meet user needs. It's not just coding - it's about systematic, disciplined, quantifiable approaches."
+    "explanation": "Software engineering is a structured approach to creating reliable, high-quality software systems that meet user needs."
   },
   {
     "id": 17,
@@ -218,7 +218,7 @@
     ],
     "correct": 1,
     "category": "Chapter 3: Agile Software Development",
-    "explanation": "Refactoring means improving the internal structure and design of existing code WITHOUT changing its external behavior. It keeps the code clean, maintainable, and reduces technical debt."
+    "explanation": "Refactoring means improving the internal structure of existing code WITHOUT changing its external behavior."
   },
   {
     "id": 18,
@@ -231,7 +231,7 @@
     ],
     "correct": 0,
     "category": "Chapter 2: Software Processes & Models",
-    "explanation": "The main goal is to verify that the software meets specified requirements and works as intended. While finding bugs is part of it, the ultimate goal is ensuring requirements are satisfied."
+    "explanation": "The main goal is to verify that the software meets specified requirements and works as intended."
   },
   {
     "id": 19,
@@ -244,7 +244,7 @@
     ],
     "correct": 1,
     "category": "Chapter 3: Agile Software Development",
-    "explanation": "A sprint is a short, time-boxed iteration (typically 1-4 weeks) in Scrum where a team completes a set amount of work from the product backlog to deliver a potentially shippable product increment."
+    "explanation": "A sprint is a short, time-boxed iteration (typically 1-4 weeks) where a team completes a set amount of work."
   },
   {
     "id": 20,
@@ -257,6 +257,1359 @@
     ],
     "correct": 1,
     "category": "Chapter 3: Agile Software Development",
-    "explanation": "Agile values customer collaboration over contract negotiation. This means working closely with customers throughout development rather than just agreeing on a fixed contract upfront and then disappearing."
+    "explanation": "Agile values customer collaboration over contract negotiation - working closely with customers throughout development."
+  },
+  {
+    "id": 21,
+    "text": "What is the role of a 'scrum master' in agile development?",
+    "options": [
+      "To write code",
+      "To manage the product backlog",
+      "To facilitate the scrum process and remove obstacles",
+      "To perform user acceptance testing"
+    ],
+    "correct": 2,
+    "category": "Chapter 3: Agile Software Development",
+    "explanation": "The Scrum Master facilitates the Scrum process, removes obstacles for the team, and ensures Scrum practices are followed."
+  },
+  {
+    "id": 22,
+    "text": "What is a software requirement?",
+    "options": [
+      "A system's architecture",
+      "A service needed by a user",
+      "A programming language specification",
+      "None of the above"
+    ],
+    "correct": 1,
+    "category": "Chapter 4: Requirements Engineering",
+    "explanation": "A software requirement is a condition or capability needed by a user to solve a problem or achieve an objective."
+  },
+  {
+    "id": 23,
+    "text": "Which type of requirement specifies what the system should do?",
+    "options": [
+      "Functional requirements",
+      "Non-functional requirements",
+      "Performance requirements",
+      "System requirements"
+    ],
+    "correct": 0,
+    "category": "Chapter 4: Requirements Engineering",
+    "explanation": "Functional requirements specify what the system should do - the specific behaviors and functions."
+  },
+  {
+    "id": 24,
+    "text": "Which of the following is an example of non-functional requirements?",
+    "options": [
+      "User login functionality",
+      "System scalability",
+      "Payment processing",
+      "Account management"
+    ],
+    "correct": 1,
+    "category": "Chapter 4: Requirements Engineering",
+    "explanation": "Scalability is a non-functional requirement - it describes HOW WELL the system performs, not WHAT it does."
+  },
+  {
+    "id": 25,
+    "text": "What is requirements engineering?",
+    "options": [
+      "Building software",
+      "Documenting user needs",
+      "A process to identify, document, and manage requirements",
+      "Coding and testing software"
+    ],
+    "correct": 2,
+    "category": "Chapter 4: Requirements Engineering",
+    "explanation": "Requirements engineering is the systematic process of identifying, documenting, analyzing, and managing requirements."
+  },
+  {
+    "id": 26,
+    "text": "The first step in requirements engineering is",
+    "options": [
+      "Validation",
+      "Elicitation",
+      "Analysis",
+      "Specification"
+    ],
+    "correct": 1,
+    "category": "Chapter 4: Requirements Engineering",
+    "explanation": "Elicitation is the first step - gathering requirements from stakeholders through interviews, workshops, etc."
+  },
+  {
+    "id": 27,
+    "text": "A requirement that specifies how fast a system must respond is an example of ....",
+    "options": [
+      "Functional requirement",
+      "Non-functional requirement",
+      "User requirement",
+      "None of the above"
+    ],
+    "correct": 1,
+    "category": "Chapter 4: Requirements Engineering",
+    "explanation": "Response time is a non-functional requirement - it specifies performance characteristics."
+  },
+  {
+    "id": 28,
+    "text": "Which elicitation method involves interacting directly with stakeholders?",
+    "options": [
+      "Document analysis",
+      "Interviews",
+      "Observation",
+      "Brainstorming"
+    ],
+    "correct": 1,
+    "category": "Chapter 4: Requirements Engineering",
+    "explanation": "Interviews involve direct, one-on-one interaction with stakeholders to gather requirements."
+  },
+  {
+    "id": 29,
+    "text": "A structured group session to gather requirements is called",
+    "options": [
+      "Survey",
+      "Brainstorming",
+      "Joint Application Development (JAD)",
+      "Focus group"
+    ],
+    "correct": 2,
+    "category": "Chapter 4: Requirements Engineering",
+    "explanation": "JAD (Joint Application Development) is a structured workshop where stakeholders and developers collaborate to define requirements."
+  },
+  {
+    "id": 30,
+    "text": "What is the purpose of prototyping in requirements elicitation?",
+    "options": [
+      "To test code",
+      "To visualize user requirements",
+      "To prepare the final system",
+      "To evaluate system performance"
+    ],
+    "correct": 1,
+    "category": "Chapter 4: Requirements Engineering",
+    "explanation": "Prototyping helps visualize and validate requirements by giving users a concrete model to interact with."
+  },
+  {
+    "id": 31,
+    "text": "Which technique is best for understanding user tasks in their natural environment?",
+    "options": [
+      "Observation",
+      "Interview",
+      "Questionnaire",
+      "Workshop"
+    ],
+    "correct": 0,
+    "category": "Chapter 4: Requirements Engineering",
+    "explanation": "Observation allows you to see how users actually perform their tasks in their real work environment, revealing unspoken needs and actual workflows."
+  },
+  {
+    "id": 32,
+    "text": "What is a 'use case'?",
+    "options": [
+      "A testing technique",
+      "A representation of user-system interaction",
+      "A deployment diagram",
+      "A project management tool"
+    ],
+    "correct": 1,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "A use case describes how a user (actor) interacts with the system to achieve a specific goal, capturing functional requirements."
+  },
+  {
+    "id": 33,
+    "text": "In requirements elicitation, 'document analysis' involves",
+    "options": [
+      "Creating new documents",
+      "Reviewing existing documentation",
+      "Writing test cases",
+      "Managing risk"
+    ],
+    "correct": 1,
+    "category": "Chapter 4: Requirements Engineering",
+    "explanation": "Document analysis reviews existing documentation like business process manuals, legacy system docs, and regulations to extract requirements."
+  },
+  {
+    "id": 34,
+    "text": "Which of these is a stakeholder in requirements gathering?",
+    "options": [
+      "End-user",
+      "System architect",
+      "Customer",
+      "All of the above"
+    ],
+    "correct": 3,
+    "category": "Chapter 4: Requirements Engineering",
+    "explanation": "Stakeholders include anyone affected by the system: end-users, customers, developers, managers, system architects, and regulatory bodies."
+  },
+  {
+    "id": 35,
+    "text": "Which process ensures all requirements are complete and consistent?",
+    "options": [
+      "Validation",
+      "Analysis",
+      "Specification",
+      "Design"
+    ],
+    "correct": 0,
+    "category": "Chapter 4: Requirements Engineering",
+    "explanation": "Requirements validation checks that requirements are complete, consistent, and accurately reflect stakeholder needs."
+  },
+  {
+    "id": 36,
+    "text": "Which diagram is used to model requirements?",
+    "options": [
+      "Sequence diagram",
+      "Use case diagram",
+      "Class diagram",
+      "Activity diagram"
+    ],
+    "correct": 1,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "Use case diagrams model functional requirements by showing actors, use cases, and their relationships from a user perspective."
+  },
+  {
+    "id": 37,
+    "text": "Requirements that contradict each other are called",
+    "options": [
+      "Overlapping requirements",
+      "Inconsistent requirements",
+      "Derived requirements",
+      "Functional requirements"
+    ],
+    "correct": 1,
+    "category": "Chapter 4: Requirements Engineering",
+    "explanation": "Inconsistent requirements conflict with each other and must be resolved through stakeholder negotiation."
+  },
+  {
+    "id": 38,
+    "text": "What is the main purpose of the Software Requirements Specification (SRS) document?",
+    "options": [
+      "To design the software",
+      "To outline requirements in detail",
+      "To test the software",
+      "To validate software performance"
+    ],
+    "correct": 1,
+    "category": "Chapter 4: Requirements Engineering",
+    "explanation": "The SRS formally documents all requirements in detail, serving as a contract between stakeholders and developers."
+  },
+  {
+    "id": 39,
+    "text": "Which of the following is NOT a characteristic of a good requirement?",
+    "options": [
+      "Feasibility",
+      "Ambiguity",
+      "Testability",
+      "Traceability"
+    ],
+    "correct": 1,
+    "category": "Chapter 4: Requirements Engineering",
+    "explanation": "Ambiguity (being open to multiple interpretations) is a BAD characteristic. Good requirements must be clear and unambiguous."
+  },
+  {
+    "id": 40,
+    "text": "A requirement that is ambiguous",
+    "options": [
+      "Is precise and testable",
+      "Is open to multiple interpretations",
+      "Clearly defines user needs",
+      "Has measurable acceptance criteria"
+    ],
+    "correct": 1,
+    "category": "Chapter 4: Requirements Engineering",
+    "explanation": "An ambiguous requirement can be interpreted in multiple ways, leading to misunderstandings and wrong implementations."
+  },
+  {
+    "id": 41,
+    "text": "Which SRS quality attribute ensures requirements are implementable within the system constraints?",
+    "options": [
+      "Completeness",
+      "Feasibility",
+      "Consistency",
+      "Modifiability"
+    ],
+    "correct": 1,
+    "category": "Chapter 4: Requirements Engineering",
+    "explanation": "Feasibility ensures that requirements can be realistically implemented given budget, time, technology, and resource constraints."
+  },
+  {
+    "id": 42,
+    "text": "What is the importance of prioritizing requirements?",
+    "options": [
+      "To reduce project cost",
+      "To address high-impact needs first",
+      "To eliminate unnecessary features",
+      "To define system constraints"
+    ],
+    "correct": 1,
+    "category": "Chapter 4: Requirements Engineering",
+    "explanation": "Prioritization ensures the most critical, high-value requirements are delivered first, maximizing business value early."
+  },
+  {
+    "id": 43,
+    "text": "What is the main purpose of requirements validation?",
+    "options": [
+      "To ensure requirements meet stakeholder needs",
+      "To verify system functionality",
+      "To prioritize requirements",
+      "To eliminate redundant requirements"
+    ],
+    "correct": 0,
+    "category": "Chapter 4: Requirements Engineering",
+    "explanation": "Validation confirms that the documented requirements actually reflect what stakeholders need and want."
+  },
+  {
+    "id": 44,
+    "text": "Which model is suitable for projects with unclear or changing requirements?",
+    "options": [
+      "Waterfall model",
+      "Plan-based model",
+      "Agile model",
+      "All the mentioned"
+    ],
+    "correct": 2,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "Agile models are designed to handle changing requirements through iterative development and continuous feedback."
+  },
+  {
+    "id": 45,
+    "text": "What is a 'user story' in Agile?",
+    "options": [
+      "A detailed technical document",
+      "A description of a feature from the user's perspective",
+      "A project management chart",
+      "A database schema"
+    ],
+    "correct": 1,
+    "category": "Chapter 3: Agile Software Development",
+    "explanation": "A user story is a short, simple description of a feature written from the end-user perspective, typically: 'As a [user], I want to [action] so that [benefit].'"
+  },
+  {
+    "id": 46,
+    "text": "Which of the following is NOT a core principle of Agile?",
+    "options": [
+      "Customer collaboration",
+      "Responding to change",
+      "Following a strict plan",
+      "Working software"
+    ],
+    "correct": 2,
+    "category": "Chapter 3: Agile Software Development",
+    "explanation": "Following a strict plan contradicts Agile principles - Agile values responding to change over following a plan."
+  },
+  {
+    "id": 47,
+    "text": "Continuous integration is a practice associated with which process?",
+    "options": [
+      "Waterfall",
+      "Agile",
+      "Spiral",
+      "Prototype"
+    ],
+    "correct": 1,
+    "category": "Chapter 3: Agile Software Development",
+    "explanation": "Continuous integration is a key Agile/DevOps practice where code changes are frequently merged and tested automatically."
+  },
+  {
+    "id": 48,
+    "text": "Which process is focused on early feedback by creating working versions of the software?",
+    "options": [
+      "Waterfall",
+      "Spiral",
+      "Prototype",
+      "V- model"
+    ],
+    "correct": 2,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "Prototyping creates early working versions to gather user feedback before full development begins."
+  },
+  {
+    "id": 49,
+    "text": "Which model is suitable for safety-critical systems?",
+    "options": [
+      "Agile",
+      "Waterfall",
+      "Prototype",
+      "Big bang"
+    ],
+    "correct": 1,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "Waterfall (or its variants like V-model) is often used for safety-critical systems because of its rigorous documentation and verification at each stage."
+  },
+  {
+    "id": 50,
+    "text": "What is 'refactoring' in software development?",
+    "options": [
+      "Adding new features",
+      "Redesigning the database",
+      "Improving internal structure without changing external behavior",
+      "Writing user documentation"
+    ],
+    "correct": 2,
+    "category": "Chapter 3: Agile Software Development",
+    "explanation": "Refactoring restructures existing code to improve design, readability, and maintainability while preserving external behavior."
+  },
+  {
+    "id": 51,
+    "text": "What is the primary goal of software integration?",
+    "options": [
+      "To isolate individual components",
+      "To combine software components into a unified system",
+      "To document user requirements",
+      "To design user interfaces"
+    ],
+    "correct": 1,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "Integration combines separately developed components into a complete, working system."
+  },
+  {
+    "id": 52,
+    "text": "Which type of testing focuses on verifying the interaction between software modules?",
+    "options": [
+      "Unit testing",
+      "Integration testing",
+      "System testing",
+      "Acceptance testing"
+    ],
+    "correct": 1,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "Integration testing verifies that different modules work correctly together, testing interfaces and interactions."
+  },
+  {
+    "id": 53,
+    "text": "What is the primary goal of reuse-oriented software engineering?",
+    "options": [
+      "Develop from scratch",
+      "Minimize development time and cost by reusing components",
+      "Focus on highly customized software",
+      "Prioritize documentation"
+    ],
+    "correct": 1,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "Reuse-oriented engineering leverages existing components to reduce development time, cost, and risk."
+  },
+  {
+    "id": 54,
+    "text": "What is the primary goal of requirements engineering?",
+    "options": [
+      "Writing code efficiently",
+      "Designing user interfaces",
+      "Understanding and documenting user needs",
+      "Testing software thoroughly"
+    ],
+    "correct": 2,
+    "category": "Chapter 4: Requirements Engineering",
+    "explanation": "The primary goal is to understand stakeholder needs and document them clearly as requirements."
+  },
+  {
+    "id": 55,
+    "text": "Which phase of requirements engineering involves gathering information from stakeholders?",
+    "options": [
+      "Validation",
+      "Elicitation",
+      "Specification",
+      "Management"
+    ],
+    "correct": 1,
+    "category": "Chapter 4: Requirements Engineering",
+    "explanation": "Elicitation is the phase where requirements are gathered from stakeholders through interviews, workshops, etc."
+  },
+  {
+    "id": 56,
+    "text": "What is a 'stakeholder' in requirements engineering?",
+    "options": [
+      "Software developer",
+      "Anyone affected by the system",
+      "Database administrator",
+      "Network engineer"
+    ],
+    "correct": 1,
+    "category": "Chapter 4: Requirements Engineering",
+    "explanation": "Stakeholders include anyone who has an interest in or is affected by the system - users, customers, developers, managers, etc."
+  },
+  {
+    "id": 57,
+    "text": "What does 'functional requirements' describe?",
+    "options": [
+      "User interface design",
+      "System performance",
+      "What the system should do",
+      "Security constraints"
+    ],
+    "correct": 2,
+    "category": "Chapter 4: Requirements Engineering",
+    "explanation": "Functional requirements describe the specific behaviors, functions, and tasks the system must perform."
+  },
+  {
+    "id": 58,
+    "text": "What does 'non-functional requirements' describe?",
+    "options": [
+      "Specific features",
+      "How well the system performs",
+      "Database schemas",
+      "User manuals"
+    ],
+    "correct": 1,
+    "category": "Chapter 4: Requirements Engineering",
+    "explanation": "Non-functional requirements describe quality attributes like performance, security, reliability, and scalability."
+  },
+  {
+    "id": 59,
+    "text": "Which technique is used to document requirements in a structured way?",
+    "options": [
+      "Brainstorming",
+      "Prototyping",
+      "Use cases",
+      "Interviews"
+    ],
+    "correct": 2,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "Use cases provide a structured way to document functional requirements by describing user-system interactions."
+  },
+  {
+    "id": 60,
+    "text": "What is a 'use case diagram'?",
+    "options": [
+      "Database relationships",
+      "User interactions with the system",
+      "Code dependencies",
+      "Network topology"
+    ],
+    "correct": 1,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "A use case diagram visually represents actors, use cases, and their relationships, showing system functionality from a user perspective."
+  },
+  {
+    "id": 61,
+    "text": "Benefit of prioritizing requirements?",
+    "options": [
+      "Increased complexity",
+      "Focus on most critical features first",
+      "Reduced user satisfaction",
+      "Increased costs"
+    ],
+    "correct": 1,
+    "category": "Chapter 4: Requirements Engineering",
+    "explanation": "Prioritization ensures the most valuable, critical features are developed first, delivering maximum business value early and managing stakeholder expectations."
+  },
+  {
+    "id": 62,
+    "text": "Which activities included in Requirements engineering process?",
+    "options": [
+      "Elicitation and analysis",
+      "Specification",
+      "Validation",
+      "All the mentioned"
+    ],
+    "correct": 3,
+    "category": "Chapter 4: Requirements Engineering",
+    "explanation": "Requirements engineering includes elicitation, analysis, specification, validation, and management - all four phases are essential."
+  },
+  {
+    "id": 63,
+    "text": "What is the primary purpose of software validation?",
+    "options": [
+      "Verify software built correctly",
+      "Ensure software meets user requirements",
+      "Optimize code performance",
+      "Document development"
+    ],
+    "correct": 1,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "Validation answers 'Are we building the right product?' - ensuring the software meets actual user needs and requirements."
+  },
+  {
+    "id": 64,
+    "text": "Verification is concerned with",
+    "options": [
+      "User satisfaction",
+      "Building the right product",
+      "Building the product right",
+      "Design phase"
+    ],
+    "correct": 2,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "Verification checks if the product is built correctly according to specifications - 'Are we building the product right?'"
+  },
+  {
+    "id": 65,
+    "text": "Validation is concerned with",
+    "options": [
+      "User satisfaction",
+      "Building the right product",
+      "Building the product right",
+      "Design phase"
+    ],
+    "correct": 1,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "Validation checks if the right product is built to meet user needs - 'Are we building the right product?'"
+  },
+  {
+    "id": 66,
+    "text": "Which of the following is an example of validation?",
+    "options": [
+      "Inspection",
+      "Walkthrough",
+      "User acceptance testing",
+      "Static analysis"
+    ],
+    "correct": 2,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "User Acceptance Testing (UAT) is validation - real users test if the software meets their needs. Inspections and walkthroughs are verification activities."
+  },
+  {
+    "id": 67,
+    "text": "Which process ensures compliance with specifications?",
+    "options": [
+      "Validation",
+      "Verification",
+      "Maintenance",
+      "Deployment"
+    ],
+    "correct": 1,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "Verification ensures the software conforms to its specifications and requirements - checking against technical documents."
+  },
+  {
+    "id": 68,
+    "text": "Which question does verification answer?",
+    "options": [
+      "Is product useful?",
+      "Are we building the right product?",
+      "Are we building the product right?",
+      "Is product profitable?"
+    ],
+    "correct": 2,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "Verification answers 'Are we building the product right?' - checking correctness against specifications."
+  },
+  {
+    "id": 69,
+    "text": "Which question does validation answer?",
+    "options": [
+      "Is design correct?",
+      "Are we building the right product?",
+      "Are we building the product right?",
+      "Is coding correct?"
+    ],
+    "correct": 1,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "Validation answers 'Are we building the right product?' - ensuring the product meets actual user needs."
+  },
+  {
+    "id": 70,
+    "text": "Which of the following is a validation activity?",
+    "options": [
+      "Unit testing",
+      "Integration testing",
+      "Acceptance testing",
+      "Static analysis"
+    ],
+    "correct": 2,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "Acceptance testing is validation - users confirm the system meets their requirements. Unit/integration tests are verification activities."
+  },
+  {
+    "id": 71,
+    "text": "Role of the customer or end-user in validation?",
+    "options": [
+      "Design architecture",
+      "Reviewing and approving software",
+      "Writing code",
+      "Managing team"
+    ],
+    "correct": 1,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "Customers and end-users validate the software by reviewing and approving that it meets their actual needs during acceptance testing."
+  },
+  {
+    "id": 72,
+    "text": "Which testing technique determines if software satisfies specified requirements?",
+    "options": [
+      "Unit testing",
+      "Integration testing",
+      "System testing",
+      "Acceptance testing"
+    ],
+    "correct": 3,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "Acceptance testing determines if the software satisfies the specified requirements and is ready for delivery to the customer."
+  },
+  {
+    "id": 73,
+    "text": "Difference between verification and validation?",
+    "options": [
+      "Verification checks correctness, validation checks user needs",
+      "Verification checks user needs, validation checks correctness",
+      "Same thing",
+      "Performance vs security"
+    ],
+    "correct": 0,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "Verification ensures correct implementation (building it right). Validation ensures correct requirements (building the right thing)."
+  },
+  {
+    "id": 74,
+    "text": "In V-model, which phase corresponds to unit testing?",
+    "options": [
+      "Requirements analysis",
+      "Architectural design",
+      "Detailed design",
+      "Coding"
+    ],
+    "correct": 3,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "In the V-model, unit testing corresponds to the coding phase - each module is tested immediately after implementation."
+  },
+  {
+    "id": 75,
+    "text": "Which phase corresponds to acceptance testing in V-model?",
+    "options": [
+      "Requirements analysis",
+      "Architectural design",
+      "System design",
+      "Coding"
+    ],
+    "correct": 0,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "Acceptance testing in V-model corresponds to requirements analysis - testing against the initial requirements gathered."
+  },
+  {
+    "id": 76,
+    "text": "What does the 'V' in V-model represent?",
+    "options": [
+      "Validation and verification",
+      "Visual representation",
+      "Velocity and volume",
+      "Variability"
+    ],
+    "correct": 0,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "The V in V-model stands for Verification and Validation - the left side is development (verification) and right side is testing (validation)."
+  },
+  {
+    "id": 77,
+    "text": "In V-model, which testing level is performed after integration testing?",
+    "options": [
+      "Unit testing",
+      "Acceptance testing",
+      "System testing",
+      "Alpha testing"
+    ],
+    "correct": 2,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "In V-model, the order is: Unit Testing → Integration Testing → System Testing → Acceptance Testing. System testing follows integration."
+  },
+  {
+    "id": 78,
+    "text": "Primary disadvantage of the V-model?",
+    "options": [
+      "Lack of documentation",
+      "Difficulty handling changing requirements",
+      "Poor testing coverage",
+      "Inefficient resource allocation"
+    ],
+    "correct": 1,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "The V-model is rigid and struggles with changing requirements because it's a linear sequential model like Waterfall."
+  },
+  {
+    "id": 79,
+    "text": "Which phase corresponds to system testing in V-model?",
+    "options": [
+      "Requirements analysis",
+      "Architectural design",
+      "System design",
+      "Coding"
+    ],
+    "correct": 2,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "System testing in V-model corresponds to system design phase - testing the complete system against the system design specifications."
+  },
+  {
+    "id": 80,
+    "text": "Which level of testing checks interaction between modules?",
+    "options": [
+      "Unit",
+      "Integration",
+      "System",
+      "Acceptance"
+    ],
+    "correct": 1,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "Integration testing specifically focuses on verifying interactions and interfaces between different software modules."
+  },
+  {
+    "id": 81,
+    "text": "Which is correct for Agile development?",
+    "options": [
+      "Specification, design, implementation interleaved",
+      "Series of versions with stakeholder involvement",
+      "Frequent delivery",
+      "All the mentioned"
+    ],
+    "correct": 3,
+    "category": "Chapter 3: Agile Software Development",
+    "explanation": "Agile development interleaves specification, design, and implementation, delivers in increments, involves stakeholders continuously, and delivers frequently."
+  },
+  {
+    "id": 82,
+    "text": "Key practices for agile development?",
+    "options": [
+      "User stories",
+      "Test-first & Refactoring",
+      "Pair programming",
+      "All the mentioned"
+    ],
+    "correct": 3,
+    "category": "Chapter 3: Agile Software Development",
+    "explanation": "Key Agile practices include user stories for requirements, test-driven development, refactoring, pair programming, and continuous integration."
+  },
+  {
+    "id": 83,
+    "text": "Spiral Model primarily focuses on",
+    "options": [
+      "Coding speed",
+      "Documentation",
+      "Risk analysis",
+      "Testing only"
+    ],
+    "correct": 2,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "The Spiral Model's primary focus is risk analysis - identifying and mitigating risks in each iteration."
+  },
+  {
+    "id": 84,
+    "text": "Each loop in the Spiral Model represents",
+    "options": [
+      "Test case",
+      "Development phase",
+      "Complete project",
+      "Maintenance cycle"
+    ],
+    "correct": 1,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "Each loop (spiral) represents one development phase or iteration, progressively building a more complete system."
+  },
+  {
+    "id": 85,
+    "text": "Spiral Model is best suited for",
+    "options": [
+      "Small projects",
+      "Low-risk projects",
+      "Large, complex, high-risk projects",
+      "Simple CRUD"
+    ],
+    "correct": 2,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "The Spiral Model is ideal for large, complex, high-risk projects because it emphasizes risk analysis at every iteration."
+  },
+  {
+    "id": 86,
+    "text": "In Spiral Model, risk is evaluated during",
+    "options": [
+      "Planning",
+      "Coding",
+      "Risk analysis phase",
+      "Testing"
+    ],
+    "correct": 2,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "Risk evaluation happens in the Risk Analysis phase of each spiral, where risks are identified and mitigation strategies are developed."
+  },
+  {
+    "id": 87,
+    "text": "Spiral Model is also known as",
+    "options": [
+      "Linear model",
+      "Evolutionary process model",
+      "Static model",
+      "Sequential model"
+    ],
+    "correct": 1,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "The Spiral Model is an evolutionary process model because it develops software through repeated iterations, each building on the previous."
+  },
+  {
+    "id": 88,
+    "text": "First step in each spiral loop is",
+    "options": [
+      "Testing",
+      "Planning",
+      "Coding",
+      "Deployment"
+    ],
+    "correct": 1,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "Each spiral loop begins with Planning - determining objectives, alternatives, and constraints for that iteration."
+  },
+  {
+    "id": 89,
+    "text": "Which activity follows risk analysis in Spiral Model?",
+    "options": [
+      "Planning",
+      "Engineering (development & testing)",
+      "Maintenance",
+      "Documentation"
+    ],
+    "correct": 1,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "After risk analysis, Engineering phase follows - where development and testing of that iteration's deliverables occur."
+  },
+  {
+    "id": 90,
+    "text": "What does each spiral end with?",
+    "options": [
+      "Coding",
+      "Documentation",
+      "Customer evaluation",
+      "Testing"
+    ],
+    "correct": 2,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "Each spiral ends with Customer Evaluation - reviewing the iteration's results and planning the next iteration."
+  },
+    {
+    "id": 91,
+    "text": "Spiral Model can be considered combination of",
+    "options": [
+      "Iterative and Waterfall",
+      "Agile only",
+      "Testing and deployment",
+      "Coding and debugging"
+    ],
+    "correct": 0,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "The Spiral Model combines iterative development (repeating cycles) with the structured phases of Waterfall (planning, risk analysis, engineering, evaluation)."
+  },
+  {
+    "id": 92,
+    "text": "Key strength of Spiral Model?",
+    "options": [
+      "Simple to manage",
+      "No need for experts",
+      "Early identification of risks",
+      "Low cost"
+    ],
+    "correct": 2,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "The key strength is early and continuous risk identification, allowing proactive risk mitigation before problems become critical."
+  },
+  {
+    "id": 93,
+    "text": "Which phase involves customer feedback and approval?",
+    "options": [
+      "Planning",
+      "Risk Analysis",
+      "Engineering",
+      "Evaluation"
+    ],
+    "correct": 3,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "The Evaluation phase involves customer feedback and approval of the iteration's deliverables before proceeding to the next spiral."
+  },
+  {
+    "id": 94,
+    "text": "is the process of developing abstract models of a system, each presenting a different view.",
+    "options": [
+      "System modeling",
+      "Waterfall",
+      "Agile",
+      "Unit testing"
+    ],
+    "correct": 0,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "System modeling creates abstract representations of a system from different perspectives (structural, behavioral, interaction, etc.)."
+  },
+  {
+    "id": 95,
+    "text": "Which model type shows how system interacts with external environment?",
+    "options": [
+      "Structural",
+      "Behavioral",
+      "Context model",
+      "Interaction"
+    ],
+    "correct": 2,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "Context models show the system boundary and how it interacts with external entities like users, other systems, and external services."
+  },
+  {
+    "id": 96,
+    "text": "Interaction models include which diagram types?",
+    "options": [
+      "Use case and sequence",
+      "Class and state",
+      "Activity and class",
+      "Component and deployment"
+    ],
+    "correct": 0,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "Interaction models are represented by Use Case diagrams (showing actor-system interactions) and Sequence diagrams (showing object interactions over time)."
+  },
+  {
+    "id": 97,
+    "text": "What do structural models (class diagrams) represent?",
+    "options": [
+      "Dynamic behavior",
+      "External context",
+      "Internal organization & relationships",
+      "UI layouts"
+    ],
+    "correct": 2,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "Structural models like class diagrams represent the static structure - classes, attributes, methods, and relationships between them."
+  },
+  {
+    "id": 98,
+    "text": "Which perspective focuses on dynamic behavior (activity, state transitions)?",
+    "options": [
+      "Context",
+      "Interaction",
+      "Structural",
+      "Behavioral"
+    ],
+    "correct": 3,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "Behavioral perspective focuses on dynamic behavior - how the system responds to events, changes state, and executes activities over time."
+  },
+  {
+    "id": 99,
+    "text": "Which is a type of UML diagram?",
+    "options": [
+      "Class",
+      "Activity",
+      "Sequence",
+      "All the mentioned"
+    ],
+    "correct": 3,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "All of these are UML diagrams: Class (structure), Activity (behavior), Sequence (interaction), plus many others like Use Case, State, Component."
+  },
+  {
+    "id": 100,
+    "text": "Structural models display organization in terms of components and relationships.",
+    "options": [
+      "Structural models",
+      "Behavioral models",
+      "Interaction models",
+      "All"
+    ],
+    "correct": 0,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "Structural models (class diagrams, component diagrams) display the static organization and relationships between system components."
+  },
+  {
+    "id": 101,
+    "text": "helps to identify user requirements.",
+    "options": [
+      "Structural models",
+      "Behavioral models",
+      "Interaction models",
+      "None"
+    ],
+    "correct": 2,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "Interaction models (use case diagrams) help identify functional requirements by showing how users interact with the system."
+  },
+  {
+    "id": 102,
+    "text": "Which represents structural models?",
+    "options": [
+      "Class diagram",
+      "Activity diagram",
+      "Sequence diagram",
+      "Use-case"
+    ],
+    "correct": 0,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "Class diagrams represent structural models showing classes, attributes, methods, and relationships (inheritance, association, aggregation)."
+  },
+  {
+    "id": 103,
+    "text": "Which UML diagram represents interaction models?",
+    "options": [
+      "Class",
+      "Activity",
+      "Sequence",
+      "State"
+    ],
+    "correct": 2,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "Sequence diagrams represent interaction models by showing the sequence of messages exchanged between objects over time."
+  },
+  {
+    "id": 104,
+    "text": "Sequence diagram models",
+    "options": [
+      "Interaction between objects over time",
+      "Physical deployment",
+      "Workflow",
+      "Hierarchical relationships"
+    ],
+    "correct": 0,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "Sequence diagrams model interactions between objects over time, showing the chronological order of message exchanges."
+  },
+  {
+    "id": 105,
+    "text": "Best UML diagram for system reaction to events?",
+    "options": [
+      "Sequence",
+      "State machine",
+      "Class",
+      "Activity"
+    ],
+    "correct": 1,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "State machine diagrams are best for modeling how a system reacts to events by showing states and transitions triggered by events."
+  },
+  {
+    "id": 106,
+    "text": "Rectangle in class diagram represents?",
+    "options": [
+      "Use case",
+      "Class",
+      "Object interaction",
+      "Deployment"
+    ],
+    "correct": 1,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "In UML class diagrams, a rectangle represents a class, containing the class name, attributes, and methods."
+  },
+  {
+    "id": 107,
+    "text": "Lifelines in sequence diagram represent?",
+    "options": [
+      "Requirements",
+      "Object interactions over time",
+      "User stories",
+      "Hardware"
+    ],
+    "correct": 1,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "Lifelines represent individual objects or actors participating in the interaction, with vertical lines showing their existence over time."
+  },
+  {
+    "id": 108,
+    "text": "Use case diagram consists of",
+    "options": [
+      "Actors, use cases, and relationships",
+      "Classes",
+      "Components",
+      "States"
+    ],
+    "correct": 0,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "Use case diagrams show actors (users/systems), use cases (functionalities), and relationships between them (include, extend, generalization)."
+  },
+  {
+    "id": 109,
+    "text": "NOT a system modeling technique?",
+    "options": [
+      "Object-oriented",
+      "Agile methodology",
+      "Data flow",
+      "State modeling"
+    ],
+    "correct": 1,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "Agile methodology is a development process, not a system modeling technique. Modeling techniques include object-oriented, data flow, state, and structural modeling."
+  },
+  {
+    "id": 110,
+    "text": "shows object classes and associations.",
+    "options": [
+      "Sequence",
+      "Use case",
+      "Activity",
+      "Class diagram"
+    ],
+    "correct": 3,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "Class diagrams show object classes, their attributes and methods, and associations (relationships) between classes."
+  },
+  {
+    "id": 111,
+    "text": "shows activities involved in data processing.",
+    "options": [
+      "Sequence",
+      "Use case",
+      "Activity",
+      "Class"
+    ],
+    "correct": 2,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "Activity diagrams show workflows, business processes, and the flow of control from activity to activity in data processing."
+  },
+  {
+    "id": 112,
+    "text": "reveals how system is used in broader business processes.",
+    "options": [
+      "Process model",
+      "State model",
+      "Interaction model",
+      "All"
+    ],
+    "correct": 0,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "Process models (like activity diagrams) reveal how the system fits into and supports broader business processes and workflows."
+  },
+  {
+    "id": 113,
+    "text": "shows dynamic behavior and how system responds to events.",
+    "options": [
+      "Structural",
+      "Behavioral",
+      "Interaction",
+      "All"
+    ],
+    "correct": 1,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "Behavioral models (state machine, activity diagrams) show dynamic behavior - how the system responds to events and changes state over time."
+  },
+  {
+    "id": 114,
+    "text": "presents system and relationship with other systems.",
+    "options": [
+      "Class diagram",
+      "Activity",
+      "Sequence",
+      "Context diagram"
+    ],
+    "correct": 3,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "Context diagrams show the system boundary and its relationships with external entities like users, other systems, and external services."
+  },
+  {
+    "id": 115,
+    "text": "Which is static model?",
+    "options": [
+      "Structural",
+      "Behavioral",
+      "All",
+      "Both"
+    ],
+    "correct": 0,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "Structural models (class diagrams, component diagrams) are static - they show the system's structure at a point in time, not how it changes."
+  },
+  {
+    "id": 116,
+    "text": "State machine model focuses on",
+    "options": [
+      "Data flow",
+      "Sequence of interactions",
+      "System states and transitions",
+      "Object hierarchies"
+    ],
+    "correct": 2,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "State machine models focus on system states (conditions) and transitions triggered by events that move the system between states."
+  },
+  {
+    "id": 117,
+    "text": "Which diagram useful for modeling functional requirements from user perspective?",
+    "options": [
+      "Class",
+      "Use case",
+      "Activity",
+      "Sequence"
+    ],
+    "correct": 1,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "Use case diagrams are ideal for modeling functional requirements from a user perspective - showing what users can do with the system."
+  },
+  {
+    "id": 118,
+    "text": "Vertical lifeline in sequence diagram represents",
+    "options": [
+      "Time progression",
+      "Message priority",
+      "Processing time",
+      "Architecture layers"
+    ],
+    "correct": 0,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "The vertical lifeline represents time progression - messages flow down the lifeline in chronological order."
+  },
+  {
+    "id": 119,
+    "text": "Best for modeling logic of business processes?",
+    "options": [
+      "Sequence",
+      "Activity",
+      "State machine",
+      "Class"
+    ],
+    "correct": 1,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "Activity diagrams are best for modeling business process logic - showing sequential and parallel workflows, decision points, and activities."
+  },
+  {
+    "id": 120,
+    "text": "Which diagram focuses on system boundary without internal detail?",
+    "options": [
+      "Context model",
+      "Sequence",
+      "Class",
+      "Activity"
+    ],
+    "correct": 0,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "Context diagrams (context models) focus only on the system boundary and external interactions, showing no internal structure or details."
+  },
+  {
+    "id": 121,
+    "text": "Primary output of architectural design process?",
+    "options": [
+      "Code documentation",
+      "Test cases",
+      "Architectural model with components",
+      "Deployment script"
+    ],
+    "correct": 2,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "Architectural design produces an architectural model describing system components, their responsibilities, and communication interfaces."
+  },
+  {
+    "id": 122,
+    "text": "Which Agile methodology uses pair programming?",
+    "options": [
+      "Scrum",
+      "Kanban",
+      "Extreme Programming (XP)",
+      "Waterfall"
+    ],
+    "correct": 2,
+    "category": "Chapter 3: Agile Software Development",
+    "explanation": "Extreme Programming (XP) uses pair programming - two developers work together at one workstation, one coding, one reviewing."
+  },
+  {
+    "id": 123,
+    "text": "In V-model, which phase is paired with system testing?",
+    "options": [
+      "Requirements",
+      "Architectural design",
+      "System design",
+      "Module design"
+    ],
+    "correct": 2,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "In V-model, System Design phase on the left pairs with System Testing on the right - testing the complete system against system design."
+  },
+  {
+    "id": 124,
+    "text": "What is the main advantage of iterative development?",
+    "options": [
+      "Early delivery of subset",
+      "Less testing",
+      "No planning",
+      "Avoids documentation"
+    ],
+    "correct": 0,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "Iterative development delivers working subsets of functionality early, allowing customer feedback and value delivery before full completion."
   }
-]
+    ]
+
