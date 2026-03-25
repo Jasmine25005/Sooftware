@@ -766,7 +766,7 @@
     "category": "Chapter 5: System Modeling",
     "explanation": "Use cases provide a structured way to document functional requirements by describing user-system interactions."
   },
- {
+    {
     "id": 60,
     "text": "What is a \"use case diagram\"?",
     "options": [
@@ -781,12 +781,12 @@
   },
   {
     "id": 61,
-    "text": "Benefit of prioritizing requirements?",
+    "text": "What is the benefit of \"prioritizing requirements\"?",
     "options": [
-      "Increased complexity",
-      "Focus on most critical features first",
-      "Reduced user satisfaction",
-      "Increased costs"
+      "Increased project complexity.",
+      "Focus on delivering the most critical features first.",
+      "Reduced user satisfaction.",
+      "Increased development costs."
     ],
     "correct": 1,
     "category": "Chapter 4: Requirements Engineering",
@@ -794,11 +794,11 @@
   },
   {
     "id": 62,
-    "text": "Which activities included in Requirements engineering process?",
+    "text": "Which of the following activities is included in the Requirements engineering process?",
     "options": [
-      "Elicitation and analysis",
-      "Specification",
-      "Validation",
+      "Requirements elicitation and analysis",
+      "Requirements specification",
+      "Requirements validation",
       "All the mentioned"
     ],
     "correct": 3,
@@ -809,10 +809,10 @@
     "id": 63,
     "text": "What is the primary purpose of software validation?",
     "options": [
-      "Verify software built correctly",
-      "Ensure software meets user requirements",
-      "Optimize code performance",
-      "Document development"
+      "To verify that the software is built correctly.",
+      "To ensure the software meets user requirements.",
+      "To optimize code performance.",
+      "To document the development process."
     ],
     "correct": 1,
     "category": "Chapter 2: Software Processes & Models",
@@ -874,10 +874,10 @@
     "id": 68,
     "text": "Which question does verification answer?",
     "options": [
-      "Is product useful?",
+      "Is the product useful?",
       "Are we building the right product?",
       "Are we building the product right?",
-      "Is product profitable?"
+      "Is the product profitable?"
     ],
     "correct": 2,
     "category": "Chapter 2: Software Processes & Models",
@@ -887,7 +887,7 @@
     "id": 69,
     "text": "Which question does validation answer?",
     "options": [
-      "Is design correct?",
+      "Is the design correct?",
       "Are we building the right product?",
       "Are we building the product right?",
       "Is coding correct?"
@@ -900,10 +900,10 @@
     "id": 70,
     "text": "Which of the following is a validation activity?",
     "options": [
-      "Unit testing",
-      "Integration testing",
-      "Acceptance testing",
-      "Static analysis"
+      "Unit testing.",
+      "Integration testing.",
+      "Acceptance testing.",
+      "Code review."
     ],
     "correct": 2,
     "category": "Chapter 2: Software Processes & Models",
@@ -911,12 +911,12 @@
   },
   {
     "id": 71,
-    "text": "Role of the customer or end-user in validation?",
+    "text": "What is the role of the customer or end-user in validation?",
     "options": [
-      "Design architecture",
-      "Reviewing and approving software",
-      "Writing code",
-      "Managing team"
+      "Designing the software architecture.",
+      "Reviewing and approving the software.",
+      "Writing code.",
+      "Managing the development team."
     ],
     "correct": 1,
     "category": "Chapter 2: Software Processes & Models",
@@ -924,12 +924,12 @@
   },
   {
     "id": 72,
-    "text": "Which testing technique determines if software satisfies specified requirements?",
+    "text": "Which testing technique is used to determine if the software satisfies the specified requirements?",
     "options": [
-      "Unit testing",
-      "Integration testing",
-      "System testing",
-      "Acceptance testing"
+      "Unit testing.",
+      "Integration testing.",
+      "System testing.",
+      "Acceptance testing."
     ],
     "correct": 3,
     "category": "Chapter 2: Software Processes & Models",
@@ -937,12 +937,12 @@
   },
   {
     "id": 73,
-    "text": "Difference between verification and validation?",
+    "text": "What is the difference between verification and validation?",
     "options": [
-      "Verification checks correctness, validation checks user needs",
-      "Verification checks user needs, validation checks correctness",
-      "Same thing",
-      "Performance vs security"
+      "Verification checks if the software is correct, validation checks if it meets user needs.",
+      "Verification checks if the software meets user needs, validation checks if it is correct.",
+      "Verification and validation are the same thing.",
+      "Verification focuses on performance, validation focuses on security."
     ],
     "correct": 0,
     "category": "Chapter 2: Software Processes & Models",
@@ -950,12 +950,12 @@
   },
   {
     "id": 74,
-    "text": "In V-model, which phase corresponds to unit testing?",
+    "text": "In the V-model, which phase corresponds to unit testing?",
     "options": [
-      "Requirements analysis",
-      "Architectural design",
-      "Detailed design",
-      "Coding"
+      "Requirements analysis.",
+      "Architectural design.",
+      "Detailed design.",
+      "Coding."
     ],
     "correct": 3,
     "category": "Chapter 2: Software Processes & Models",
@@ -963,12 +963,12 @@
   },
   {
     "id": 75,
-    "text": "Which phase corresponds to acceptance testing in V-model?",
+    "text": "Which phase corresponds to acceptance testing in the V-model?",
     "options": [
-      "Requirements analysis",
-      "Architectural design",
-      "System design",
-      "Coding"
+      "Requirements analysis.",
+      "Architectural design.",
+      "System design.",
+      "Coding."
     ],
     "correct": 0,
     "category": "Chapter 2: Software Processes & Models",
@@ -976,12 +976,12 @@
   },
   {
     "id": 76,
-    "text": "What does the 'V' in V-model represent?",
+    "text": "What does the \"V\" in V-model represent?",
     "options": [
-      "Validation and verification",
-      "Visual representation",
-      "Velocity and volume",
-      "Variability"
+      "Validation and verification.",
+      "Visual representation of data.",
+      "Velocity and volume.",
+      "Variability."
     ],
     "correct": 0,
     "category": "Chapter 2: Software Processes & Models",
@@ -1002,12 +1002,12 @@
   },
   {
     "id": 78,
-    "text": "Primary disadvantage of the V-model?",
+    "text": "What is the primary disadvantage of the V-model?",
     "options": [
-      "Lack of documentation",
-      "Difficulty handling changing requirements",
-      "Poor testing coverage",
-      "Inefficient resource allocation"
+      "Lack of documentation.",
+      "Difficulty in handling changing requirements.",
+      "Poor testing coverage.",
+      "Inefficient resource allocation."
     ],
     "correct": 1,
     "category": "Chapter 2: Software Processes & Models",
@@ -1015,12 +1015,12 @@
   },
   {
     "id": 79,
-    "text": "Which phase corresponds to system testing in V-model?",
+    "text": "Which phase corresponds to system testing in the V-model?",
     "options": [
-      "Requirements analysis",
-      "Architectural design",
-      "System design",
-      "Coding"
+      "Requirements analysis.",
+      "Architectural design.",
+      "System design.",
+      "Coding."
     ],
     "correct": 2,
     "category": "Chapter 2: Software Processes & Models",
@@ -1028,24 +1028,50 @@
   },
   {
     "id": 80,
-    "text": "Which level of testing checks interaction between modules?",
+    "text": "What is the focus of unit testing?",
     "options": [
-      "Unit",
-      "Integration",
-      "System",
-      "Acceptance"
+      "Testing the entire system.",
+      "Testing individual components.",
+      "Testing user interfaces.",
+      "Testing database performance."
+    ],
+    "correct": 1,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "Unit testing specifically focuses on verifying that individual components or modules of the software work exactly as designed."
+  },
+  {
+    "id": 81,
+    "text": "Which phase ensures that the software meets the user's business requirements?",
+    "options": [
+      "Unit testing.",
+      "Integration testing.",
+      "System testing.",
+      "Acceptance testing."
+    ],
+    "correct": 3,
+    "category": "Chapter 2: Software Processes & Models",
+    "explanation": "Acceptance testing is the final phase where the end-users verify that the system satisfies their business requirements."
+  },
+  {
+    "id": 82,
+    "text": "Which level of testing checks the interaction between modules?",
+    "options": [
+      "Unit testing.",
+      "Integration testing.",
+      "System testing.",
+      "Acceptance testing."
     ],
     "correct": 1,
     "category": "Chapter 2: Software Processes & Models",
     "explanation": "Integration testing specifically focuses on verifying interactions and interfaces between different software modules."
   },
   {
-    "id": 81,
-    "text": "Which is correct for Agile development?",
+    "id": 83,
+    "text": "Which of the following is correct for Agile development?",
     "options": [
-      "Specification, design, implementation interleaved",
-      "Series of versions with stakeholder involvement",
-      "Frequent delivery",
+      "Program specification, design and implementation are inter-leaved",
+      "The system is developed as a series of versions or increments with stakeholders involved in version specification and evaluation",
+      "Frequent delivery of new versions for evaluation",
       "All the mentioned"
     ],
     "correct": 3,
@@ -1053,11 +1079,11 @@
     "explanation": "Agile development interleaves specification, design, and implementation, delivers in increments, involves stakeholders continuously, and delivers frequently."
   },
   {
-    "id": 82,
-    "text": "Key practices for agile development?",
+    "id": 84,
+    "text": "Which of the following is the correct Key practices for agile development?",
     "options": [
-      "User stories",
-      "Test-first & Refactoring",
+      "User stories for specification",
+      "Test-first development and Refactoring",
       "Pair programming",
       "All the mentioned"
     ],
@@ -1066,8 +1092,8 @@
     "explanation": "Key Agile practices include user stories for requirements, test-driven development, refactoring, pair programming, and continuous integration."
   },
   {
-    "id": 83,
-    "text": "Spiral Model primarily focuses on",
+    "id": 85,
+    "text": "The Spiral Model primarily focuses on",
     "options": [
       "Coding speed",
       "Documentation",
@@ -1079,47 +1105,47 @@
     "explanation": "The Spiral Model's primary focus is risk analysis - identifying and mitigating risks in each iteration."
   },
   {
-    "id": 84,
+    "id": 86,
     "text": "Each loop in the Spiral Model represents",
     "options": [
-      "Test case",
-      "Development phase",
-      "Complete project",
-      "Maintenance cycle"
+      "A test case",
+      "A development phase",
+      "A complete project",
+      "A maintenance cycle"
     ],
     "correct": 1,
     "category": "Chapter 2: Software Processes & Models",
     "explanation": "Each loop (spiral) represents one development phase or iteration, progressively building a more complete system."
   },
   {
-    "id": 85,
+    "id": 87,
     "text": "Spiral Model is best suited for",
     "options": [
       "Small projects",
       "Low-risk projects",
       "Large, complex, high-risk projects",
-      "Simple CRUD"
+      "Simple applications"
     ],
     "correct": 2,
     "category": "Chapter 2: Software Processes & Models",
     "explanation": "The Spiral Model is ideal for large, complex, high-risk projects because it emphasizes risk analysis at every iteration."
   },
   {
-    "id": 86,
-    "text": "In Spiral Model, risk is evaluated during",
+    "id": 88,
+    "text": "In the Spiral Model, risk is evaluated during",
     "options": [
-      "Planning",
-      "Coding",
+      "Planning phase",
+      "Coding phase",
       "Risk analysis phase",
-      "Testing"
+      "Testing phase"
     ],
     "correct": 2,
     "category": "Chapter 2: Software Processes & Models",
     "explanation": "Risk evaluation happens in the Risk Analysis phase of each spiral, where risks are identified and mitigation strategies are developed."
   },
   {
-    "id": 87,
-    "text": "Spiral Model is also known as",
+    "id": 89,
+    "text": "The Spiral Model is also known as",
     "options": [
       "Linear model",
       "Evolutionary process model",
@@ -1131,8 +1157,8 @@
     "explanation": "The Spiral Model is an evolutionary process model because it develops software through repeated iterations, each building on the previous."
   },
   {
-    "id": 88,
-    "text": "First step in each spiral loop is",
+    "id": 90,
+    "text": "The first step in each spiral loop is",
     "options": [
       "Testing",
       "Planning",
@@ -1144,8 +1170,8 @@
     "explanation": "Each spiral loop begins with Planning - determining objectives, alternatives, and constraints for that iteration."
   },
   {
-    "id": 89,
-    "text": "Which activity follows risk analysis in Spiral Model?",
+    "id": 91,
+    "text": "Which activity follows risk analysis in the Spiral Model?",
     "options": [
       "Planning",
       "Engineering (development & testing)",
@@ -1157,7 +1183,7 @@
     "explanation": "After risk analysis, Engineering phase follows - where development and testing of that iteration's deliverables occur."
   },
   {
-    "id": 90,
+    "id": 92,
     "text": "What does each spiral end with?",
     "options": [
       "Coding",
@@ -1169,9 +1195,9 @@
     "category": "Chapter 2: Software Processes & Models",
     "explanation": "Each spiral ends with Customer Evaluation - reviewing the iteration's results and planning the next iteration."
   },
-    {
-    "id": 91,
-    "text": "Spiral Model can be considered combination of",
+  {
+    "id": 93,
+    "text": "The Spiral Model can be considered combination of",
     "options": [
       "Iterative and Waterfall",
       "Agile only",
@@ -1183,8 +1209,8 @@
     "explanation": "The Spiral Model combines iterative development (repeating cycles) with the structured phases of Waterfall (planning, risk analysis, engineering, evaluation)."
   },
   {
-    "id": 92,
-    "text": "Key strength of Spiral Model?",
+    "id": 94,
+    "text": "What is a key strength of the Spiral Model?",
     "options": [
       "Simple to manage",
       "No need for experts",
@@ -1196,7 +1222,7 @@
     "explanation": "The key strength is early and continuous risk identification, allowing proactive risk mitigation before problems become critical."
   },
   {
-    "id": 93,
+    "id": 95,
     "text": "Which phase involves customer feedback and approval?",
     "options": [
       "Planning",
@@ -1209,8 +1235,8 @@
     "explanation": "The Evaluation phase involves customer feedback and approval of the iteration's deliverables before proceeding to the next spiral."
   },
   {
-    "id": 94,
-    "text": "is the process of developing abstract models of a system, each presenting a different view.",
+    "id": 96,
+    "text": "________ is the process of developing abstract models of a system, with each model presenting a different view or perspective of that system.",
     "options": [
       "System modeling",
       "Waterfall",
@@ -1222,49 +1248,49 @@
     "explanation": "System modeling creates abstract representations of a system from different perspectives (structural, behavioral, interaction, etc.)."
   },
   {
-    "id": 95,
-    "text": "Which model type shows how system interacts with external environment?",
+    "id": 97,
+    "text": "Which model type shows how a system interacts with its external environment?",
     "options": [
-      "Structural",
-      "Behavioral",
+      "Structural model",
+      "Behavioral model",
       "Context model",
-      "Interaction"
+      "Interaction model"
     ],
     "correct": 2,
     "category": "Chapter 5: System Modeling",
     "explanation": "Context models show the system boundary and how it interacts with external entities like users, other systems, and external services."
   },
   {
-    "id": 96,
-    "text": "Interaction models include which diagram types?",
+    "id": 98,
+    "text": "Interaction models include which of the following diagram types?",
     "options": [
-      "Use case and sequence",
-      "Class and state",
-      "Activity and class",
-      "Component and deployment"
+      "Use case and sequence diagrams",
+      "Class and state diagrams",
+      "Activity and class diagrams",
+      "Component and deployment diagrams"
     ],
     "correct": 0,
     "category": "Chapter 5: System Modeling",
     "explanation": "Interaction models are represented by Use Case diagrams (showing actor-system interactions) and Sequence diagrams (showing object interactions over time)."
   },
   {
-    "id": 97,
-    "text": "What do structural models (class diagrams) represent?",
+    "id": 99,
+    "text": "What do structural models (e.g. class diagrams) represent?",
     "options": [
-      "Dynamic behavior",
-      "External context",
+      "Dynamic behavior of the system",
+      "External system context",
       "Internal organization & relationships",
-      "UI layouts"
+      "User interface layouts"
     ],
     "correct": 2,
     "category": "Chapter 5: System Modeling",
     "explanation": "Structural models like class diagrams represent the static structure - classes, attributes, methods, and relationships between them."
   },
   {
-    "id": 98,
-    "text": "Which perspective focuses on dynamic behavior (activity, state transitions)?",
+    "id": 100,
+    "text": "Which perspective focuses on the dynamic behavior of a system (e.g., activity, state transitions)?",
     "options": [
-      "Context",
+      "Context perspective",
       "Interaction",
       "Structural",
       "Behavioral"
@@ -1272,344 +1298,330 @@
     "correct": 3,
     "category": "Chapter 5: System Modeling",
     "explanation": "Behavioral perspective focuses on dynamic behavior - how the system responds to events, changes state, and executes activities over time."
-  },
+},
   {
-    "id": 99,
-    "text": "Which is a type of UML diagram?",
-    "options": [
-      "Class",
-      "Activity",
-      "Sequence",
-      "All the mentioned"
-    ],
-    "correct": 3,
-    "category": "Chapter 5: System Modeling",
-    "explanation": "All of these are UML diagrams: Class (structure), Activity (behavior), Sequence (interaction), plus many others like Use Case, State, Component."
-  },
-  {
-    "id": 100,
-    "text": "Structural models display organization in terms of components and relationships.",
+    "id": 101,
+    "text": "________ of software display the organization of a system in terms of the components that make up that system and their relationships.",
     "options": [
       "Structural models",
       "Behavioral models",
       "Interaction models",
-      "All"
+      "All of the mentioned"
     ],
     "correct": 0,
     "category": "Chapter 5: System Modeling",
-    "explanation": "Structural models (class diagrams, component diagrams) display the static organization and relationships between system components."
+    "explanation": "Structural models (like class and component diagrams) display the static organization and relationships between system components."
   },
   {
-    "id": 101,
-    "text": "helps to identify user requirements.",
+    "id": 102,
+    "text": "________ helps to identify user requirements.",
     "options": [
       "Structural models",
       "Behavioral models",
       "Interaction models",
-      "None"
+      "All of the mentioned"
     ],
     "correct": 2,
     "category": "Chapter 5: System Modeling",
-    "explanation": "Interaction models (use case diagrams) help identify functional requirements by showing how users interact with the system."
+    "explanation": "Interaction models (like use case diagrams) help identify functional requirements by showing how users interact with the system."
   },
   {
-    "id": 102,
-    "text": "Which represents structural models?",
+    "id": 103,
+    "text": "Which of the following represents the structural models of the system?",
     "options": [
       "Class diagram",
       "Activity diagram",
       "Sequence diagram",
-      "Use-case"
+      "Use-case diagram"
     ],
     "correct": 0,
     "category": "Chapter 5: System Modeling",
-    "explanation": "Class diagrams represent structural models showing classes, attributes, methods, and relationships (inheritance, association, aggregation)."
+    "explanation": "Class diagrams represent structural models showing classes, attributes, methods, and their static relationships."
   },
   {
-    "id": 103,
-    "text": "Which UML diagram represents interaction models?",
+    "id": 104,
+    "text": "Which of the following UML diagrams represents the interaction models of the system?",
     "options": [
-      "Class",
-      "Activity",
-      "Sequence",
-      "State"
+      "Class diagram",
+      "Activity diagram",
+      "Sequence diagram",
+      "State diagram"
     ],
     "correct": 2,
     "category": "Chapter 5: System Modeling",
     "explanation": "Sequence diagrams represent interaction models by showing the sequence of messages exchanged between objects over time."
   },
   {
-    "id": 104,
-    "text": "Sequence diagram models",
+    "id": 105,
+    "text": "A sequence diagram models ________",
     "options": [
-      "Interaction between objects over time",
-      "Physical deployment",
-      "Workflow",
+      "The interaction between objects over time",
+      "System's physical deployment",
+      "Workflow of a business process",
       "Hierarchical relationships"
     ],
     "correct": 0,
     "category": "Chapter 5: System Modeling",
-    "explanation": "Sequence diagrams model interactions between objects over time, showing the chronological order of message exchanges."
-  },
-  {
-    "id": 105,
-    "text": "Best UML diagram for system reaction to events?",
-    "options": [
-      "Sequence",
-      "State machine",
-      "Class",
-      "Activity"
-    ],
-    "correct": 1,
-    "category": "Chapter 5: System Modeling",
-    "explanation": "State machine diagrams are best for modeling how a system reacts to events by showing states and transitions triggered by events."
+    "explanation": "Sequence diagrams specifically model interactions between objects over time, showing the chronological order of message exchanges."
   },
   {
     "id": 106,
-    "text": "Rectangle in class diagram represents?",
+    "text": "Which UML diagram is best suited for modeling how the system reacts to internal and external events?",
+    "options": [
+      "Sequence diagram",
+      "State machine diagram",
+      "Class diagram",
+      "Activity diagram"
+    ],
+    "correct": 1,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "State machine diagrams are best for modeling how a system reacts to events by showing states and transitions triggered by those events."
+  },
+  {
+    "id": 107,
+    "text": "What is represented by a rectangle in a class diagram?",
     "options": [
       "Use case",
       "Class",
       "Object interaction",
-      "Deployment"
+      "Deployment node"
     ],
     "correct": 1,
     "category": "Chapter 5: System Modeling",
-    "explanation": "In UML class diagrams, a rectangle represents a class, containing the class name, attributes, and methods."
+    "explanation": "In UML class diagrams, a rectangle represents a class, which typically contains the class name, attributes, and methods."
   },
   {
-    "id": 107,
-    "text": "Lifelines in sequence diagram represent?",
+    "id": 108,
+    "text": "What do lifelines in a sequence diagram represent?",
     "options": [
-      "Requirements",
+      "System requirements",
       "Object interactions over time",
       "User stories",
-      "Hardware"
+      "Hardware nodes"
     ],
     "correct": 1,
     "category": "Chapter 5: System Modeling",
     "explanation": "Lifelines represent individual objects or actors participating in the interaction, with vertical lines showing their existence over time."
   },
   {
-    "id": 108,
-    "text": "Use case diagram consists of",
+    "id": 109,
+    "text": "In a class diagram, a solid line with a hollow arrowhead represents.......",
+    "options": [
+      "Association",
+      "Generalization",
+      "Dependency",
+      "Aggregation"
+    ],
+    "correct": 1,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "A solid line with a hollow arrowhead pointing to the parent class represents generalization (inheritance) in UML."
+  },
+  {
+    "id": 110,
+    "text": "A use case diagram consists of",
     "options": [
       "Actors, use cases, and relationships",
-      "Classes",
-      "Components",
-      "States"
+      "Classes and their relationships",
+      "Components and nodes",
+      "States and transitions"
     ],
     "correct": 0,
     "category": "Chapter 5: System Modeling",
-    "explanation": "Use case diagrams show actors (users/systems), use cases (functionalities), and relationships between them (include, extend, generalization)."
+    "explanation": "Use case diagrams visually show actors (users/systems), use cases (functionalities), and the relationships between them."
   },
   {
-    "id": 109,
-    "text": "NOT a system modeling technique?",
+    "id": 111,
+    "text": "Which diagram represents the hierarchical relationships in a system?",
     "options": [
-      "Object-oriented",
+      "Use case diagram",
+      "Class diagram",
+      "Component diagram",
+      "Deployment diagram"
+    ],
+    "correct": 1,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "Class diagrams represent hierarchical relationships such as inheritance (generalization) and composition/aggregation between classes."
+  },
+  {
+    "id": 112,
+    "text": "Which of the following is NOT a system modeling technique?",
+    "options": [
+      "Object-oriented modeling",
       "Agile methodology",
-      "Data flow",
+      "Data flow modeling",
       "State modeling"
     ],
     "correct": 1,
     "category": "Chapter 5: System Modeling",
-    "explanation": "Agile methodology is a development process, not a system modeling technique. Modeling techniques include object-oriented, data flow, state, and structural modeling."
+    "explanation": "Agile methodology is a software development process, not a system modeling technique. The others are ways to model system architecture and data."
   },
   {
-    "id": 110,
-    "text": "shows object classes and associations.",
+    "id": 113,
+    "text": "________ shows the object classes in the system and the associations between these classes.",
     "options": [
-      "Sequence",
-      "Use case",
-      "Activity",
+      "Sequence diagram",
+      "Use case diagram",
+      "Activity diagram",
       "Class diagram"
     ],
     "correct": 3,
     "category": "Chapter 5: System Modeling",
-    "explanation": "Class diagrams show object classes, their attributes and methods, and associations (relationships) between classes."
+    "explanation": "Class diagrams show object classes, their attributes and methods, and the structural associations between these classes."
   },
   {
-    "id": 111,
-    "text": "shows activities involved in data processing.",
+    "id": 114,
+    "text": "________ shows the activities involved in a process or in data processing.",
     "options": [
-      "Sequence",
-      "Use case",
-      "Activity",
-      "Class"
+      "Sequence diagram",
+      "Use case diagram",
+      "Activity diagram",
+      "Class diagram"
     ],
     "correct": 2,
     "category": "Chapter 5: System Modeling",
-    "explanation": "Activity diagrams show workflows, business processes, and the flow of control from activity to activity in data processing."
+    "explanation": "Activity diagrams are used to show workflows, business processes, and the flow of control from activity to activity."
   },
   {
-    "id": 112,
-    "text": "reveals how system is used in broader business processes.",
+    "id": 115,
+    "text": ". . . . . . . . . . . shows the activities involved in a process or in data processing.",
+    "options": [
+      "Sequence diagram",
+      "Use case diagram",
+      "Activity diagram",
+      "Class diagram"
+    ],
+    "correct": 2,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "Activity diagrams are used to show workflows, business processes, and the sequence of activities in data processing."
+  },
+  {
+    "id": 116,
+    "text": ". . . . . . . . . . . reveals how the system being developed is used in broader business processes.",
     "options": [
       "Process model",
       "State model",
       "Interaction model",
-      "All"
+      "All the mentioned"
     ],
     "correct": 0,
     "category": "Chapter 5: System Modeling",
-    "explanation": "Process models (like activity diagrams) reveal how the system fits into and supports broader business processes and workflows."
+    "explanation": "Process models reveal how the system fits into and supports broader organizational business processes and workflows."
   },
   {
-    "id": 113,
-    "text": "shows dynamic behavior and how system responds to events.",
+    "id": 117,
+    "text": ". . . . . . . . . . . shows the dynamic behavior of the system and how it responds to events.",
     "options": [
-      "Structural",
-      "Behavioral",
-      "Interaction",
-      "All"
+      "Structural models",
+      "Behavioral models",
+      "Interaction models",
+      "All of the mentioned"
     ],
     "correct": 1,
     "category": "Chapter 5: System Modeling",
-    "explanation": "Behavioral models (state machine, activity diagrams) show dynamic behavior - how the system responds to events and changes state over time."
+    "explanation": "Behavioral models (like state machines and activity diagrams) show dynamic behavior and how the system changes state over time in response to events."
   },
   {
-    "id": 114,
-    "text": "presents system and relationship with other systems.",
+    "id": 118,
+    "text": ". . . . . . . . . . . presents the system and its relationship with other systems.",
     "options": [
       "Class diagram",
-      "Activity",
-      "Sequence",
+      "Activity diagram",
+      "Sequence diagram",
       "Context diagram"
     ],
     "correct": 3,
     "category": "Chapter 5: System Modeling",
-    "explanation": "Context diagrams show the system boundary and its relationships with external entities like users, other systems, and external services."
+    "explanation": "Context diagrams show the system boundary and its high-level relationships with external entities, including other systems."
   },
   {
-    "id": 115,
-    "text": "Which is static model?",
+    "id": 119,
+    "text": "Which of the following is a static model?",
     "options": [
-      "Structural",
-      "Behavioral",
-      "All",
-      "Both"
+      "Structural models",
+      "Behavioral models",
+      "All the mentioned",
+      "Both of the mentioned"
     ],
     "correct": 0,
     "category": "Chapter 5: System Modeling",
-    "explanation": "Structural models (class diagrams, component diagrams) are static - they show the system's structure at a point in time, not how it changes."
+    "explanation": "Structural models display the static organization of a system (components, classes, etc.), unlike behavioral models which are dynamic."
   },
   {
-    "id": 116,
-    "text": "State machine model focuses on",
+    "id": 120,
+    "text": "The state machine model focuses on . . . . . . . . . . .",
     "options": [
-      "Data flow",
-      "Sequence of interactions",
-      "System states and transitions",
+      "Data flow between components",
+      "Sequence of interactions between users and system",
+      "System states and transitions triggered by events",
       "Object hierarchies"
     ],
     "correct": 2,
     "category": "Chapter 5: System Modeling",
-    "explanation": "State machine models focus on system states (conditions) and transitions triggered by events that move the system between states."
-  },
-  {
-    "id": 117,
-    "text": "Which diagram useful for modeling functional requirements from user perspective?",
-    "options": [
-      "Class",
-      "Use case",
-      "Activity",
-      "Sequence"
-    ],
-    "correct": 1,
-    "category": "Chapter 5: System Modeling",
-    "explanation": "Use case diagrams are ideal for modeling functional requirements from a user perspective - showing what users can do with the system."
-  },
-  {
-    "id": 118,
-    "text": "Vertical lifeline in sequence diagram represents",
-    "options": [
-      "Time progression",
-      "Message priority",
-      "Processing time",
-      "Architecture layers"
-    ],
-    "correct": 0,
-    "category": "Chapter 5: System Modeling",
-    "explanation": "The vertical lifeline represents time progression - messages flow down the lifeline in chronological order."
-  },
-  {
-    "id": 119,
-    "text": "Best for modeling logic of business processes?",
-    "options": [
-      "Sequence",
-      "Activity",
-      "State machine",
-      "Class"
-    ],
-    "correct": 1,
-    "category": "Chapter 5: System Modeling",
-    "explanation": "Activity diagrams are best for modeling business process logic - showing sequential and parallel workflows, decision points, and activities."
-  },
-  {
-    "id": 120,
-    "text": "Which diagram focuses on system boundary without internal detail?",
-    "options": [
-      "Context model",
-      "Sequence",
-      "Class",
-      "Activity"
-    ],
-    "correct": 0,
-    "category": "Chapter 5: System Modeling",
-    "explanation": "Context diagrams (context models) focus only on the system boundary and external interactions, showing no internal structure or details."
+    "explanation": "State machine models focus explicitly on the different states a system can be in and the transitions between those states triggered by events."
   },
   {
     "id": 121,
-    "text": "Primary output of architectural design process?",
+    "text": "Which diagram is useful for modeling functional requirements from a user’s perspective?",
     "options": [
-      "Code documentation",
-      "Test cases",
-      "Architectural model with components",
-      "Deployment script"
+      "Class diagram",
+      "Use case diagram",
+      "Activity diagram",
+      "Sequence diagram"
     ],
-    "correct": 2,
+    "correct": 1,
     "category": "Chapter 5: System Modeling",
-    "explanation": "Architectural design produces an architectural model describing system components, their responsibilities, and communication interfaces."
+    "explanation": "Use case diagrams are ideal for capturing and modeling functional requirements purely from an external user's (actor's) perspective."
   },
   {
     "id": 122,
-    "text": "Which Agile methodology uses pair programming?",
+    "text": "The vertical lifeline in a UML sequence diagram represents . . . . . . . . . . .",
     "options": [
-      "Scrum",
-      "Kanban",
-      "Extreme Programming (XP)",
-      "Waterfall"
+      "Time progression for an object or actor",
+      "Message priority",
+      "The total processing time of the system",
+      "Component architecture layers"
     ],
-    "correct": 2,
-    "category": "Chapter 3: Agile Software Development",
-    "explanation": "Extreme Programming (XP) uses pair programming - two developers work together at one workstation, one coding, one reviewing."
+    "correct": 0,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "The vertical lifeline represents the progression of time, with messages flowing top-to-bottom in chronological order."
   },
   {
     "id": 123,
-    "text": "In V-model, which phase is paired with system testing?",
+    "text": "Which diagram is best for modeling the logic of business processes?",
     "options": [
-      "Requirements",
-      "Architectural design",
-      "System design",
-      "Module design"
+      "Sequence diagram",
+      "Activity diagram",
+      "State machine diagram",
+      "Class diagram"
     ],
-    "correct": 2,
-    "category": "Chapter 2: Software Processes & Models",
-    "explanation": "In V-model, System Design phase on the left pairs with System Testing on the right - testing the complete system against system design."
+    "correct": 1,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "Activity diagrams are best for modeling business process logic, showing workflows, decision nodes, and parallel activities."
   },
   {
     "id": 124,
-    "text": "What is the main advantage of iterative development?",
+    "text": "Which diagram focuses on system boundary and interactions with the environment, without internal detail?",
     "options": [
-      "Early delivery of subset",
-      "Less testing",
-      "No planning",
-      "Avoids documentation"
+      "Context model",
+      "Sequence diagram",
+      "Class diagram",
+      "Activity diagram"
     ],
     "correct": 0,
-    "category": "Chapter 2: Software Processes & Models",
-    "explanation": "Iterative development delivers working subsets of functionality early, allowing customer feedback and value delivery before full completion."
+    "category": "Chapter 5: System Modeling",
+    "explanation": "Context models (context diagrams) treat the system as a black box, focusing only on the boundary and external interactions without showing internal details."
+  },
+  {
+    "id": 125,
+    "text": "What is the primary output of the architectural design process?",
+    "options": [
+      "Detailed code documentation",
+      "A set of test cases",
+      "An architectural model describing components and their communication",
+      "A deployment script"
+    ],
+    "correct": 2,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "The main output of architectural design is a high-level architectural model that defines system components, their responsibilities, and how they communicate."
   }
-    ]
-
+]
