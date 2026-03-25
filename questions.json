@@ -460,8 +460,8 @@
     "options": [
       "Sequence diagram",
       "Use case diagram",
-      "Class diagram",
-      "Activity diagram"
+      "State diagram",
+      "ER Diagram"
     ],
     "correct": 1,
     "category": "Chapter 5: System Modeling",
@@ -642,7 +642,7 @@
     "options": [
       "Adding new features",
       "Redesigning the database",
-      "Improving internal structure without changing external behavior",
+      "Improving the internal structure of code without changing its external behavior",
       "Writing user documentation"
     ],
     "correct": 2,
@@ -679,10 +679,10 @@
     "id": 53,
     "text": "What is the primary goal of reuse-oriented software engineering?",
     "options": [
-      "Develop from scratch",
-      "Minimize development time and cost by reusing components",
-      "Focus on highly customized software",
-      "Prioritize documentation"
+      "To develop software from scratch for each project.",
+      "To minimize development time and cost by reusing existing components.",
+      "To focus on creating highly customized software.",
+​      "To prioritize documentation over code."
     ],
     "correct": 1,
     "category": "Chapter 2: Software Processes & Models",
@@ -705,14 +705,14 @@
     "id": 55,
     "text": "Which phase of requirements engineering involves gathering information from stakeholders?",
     "options": [
-      "Validation",
-      "Elicitation",
-      "Specification",
-      "Management"
+      "Requirements validation.",
+      "Requirements elicitation.",
+      "Requirements specification.",
+      "Requirements management."
     ],
     "correct": 1,
     "category": "Chapter 4: Requirements Engineering",
-    "explanation": "Elicitation is the phase where requirements are gathered from stakeholders through interviews, workshops, etc."
+    "explanation": "Requirements elicitation is the phase where requirements and information are gathered directly from the stakeholders."
   },
   {
     "id": 56,
@@ -742,16 +742,16 @@
   },
   {
     "id": 58,
-    "text": "What does 'non-functional requirements' describe?",
+    "text": "What does \"non-functional requirements\" describe?",
     "options": [
-      "Specific features",
-      "How well the system performs",
-      "Database schemas",
-      "User manuals"
+      "Specific features of the system.",
+      "How well the system performs.",
+      "Database schemas.",
+      "User manuals."
     ],
     "correct": 1,
     "category": "Chapter 4: Requirements Engineering",
-    "explanation": "Non-functional requirements describe quality attributes like performance, security, reliability, and scalability."
+    "explanation": "Non-functional requirements specify quality attributes and how the system operates (e.g., performance, security) rather than specific behaviors or features."
   },
   {
     "id": 59,
@@ -766,18 +766,18 @@
     "category": "Chapter 5: System Modeling",
     "explanation": "Use cases provide a structured way to document functional requirements by describing user-system interactions."
   },
-  {
+ {
     "id": 60,
-    "text": "What is a 'use case diagram'?",
+    "text": "What is a \"use case diagram\"?",
     "options": [
-      "Database relationships",
-      "User interactions with the system",
-      "Code dependencies",
-      "Network topology"
+      "A diagram showing database relationships.",
+      "A diagram illustrating user interactions with the system.",
+      "A diagram showing code dependencies.",
+      "A diagram showing network topology."
     ],
     "correct": 1,
     "category": "Chapter 5: System Modeling",
-    "explanation": "A use case diagram visually represents actors, use cases, and their relationships, showing system functionality from a user perspective."
+    "explanation": "A use case diagram is a behavioral diagram that visually represents the interaction between users (actors) and the system."
   },
   {
     "id": 61,
