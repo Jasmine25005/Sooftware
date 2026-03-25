@@ -1483,12 +1483,12 @@
   },
   {
     "id": 115,
-    "text": ". . . . . . . . . . . shows the activities involved in a process or in data processing.",
+    "text": "Which of these is a type of UML diagram?",
     "options": [
-      "Sequence diagram",
-      "Use case diagram",
+      "Class diagram",
       "Activity diagram",
-      "Class diagram"
+      "Sequence diagram",
+      "All the mentioned"
     ],
     "correct": 2,
     "category": "Chapter 5: System Modeling",
