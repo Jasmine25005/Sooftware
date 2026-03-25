@@ -1621,7 +1621,7 @@
       "A deployment script"
     ],
     "correct": 2,
-    "category": "Chapter 6: Architectural Design",
+    "category": "Chapter 1: Introduction to Software Engineering",
     "explanation": "The main output of architectural design is a high-level architectural model that defines system components, their responsibilities, and how they communicate."
   }
 ]
