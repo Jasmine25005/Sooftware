@@ -1612,7 +1612,7 @@
     "explanation": "Context models (context diagrams) treat the system as a black box, focusing only on the boundary and external interactions without showing internal details."
   },
   {
-    "id": 125,
+    "id": 1000,
     "text": "What is the primary output of the architectural design process?",
     "options": [
       "Detailed code documentation",
@@ -1623,5 +1623,1306 @@
     "correct": 2,
     "category": "Chapter 1: Introduction to Software Engineering",
     "explanation": "The main output of architectural design is a high-level architectural model that defines system components, their responsibilities, and how they communicate."
+  }
+],
+  {
+    "id": 125,
+    "text": "What is the main purpose of architectural design in software engineering?",
+    "options": [
+      "To write source code",
+      "To identify system sub-systems and their relationships",
+      "To test individual modules",
+      "To create user manuals"
+    ],
+    "correct": 1,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "Architectural design identifies the main structural components (sub-systems) of a system and how they relate to and interact with each other, establishing the high-level system organization."
+  },
+  {
+    "id": 126,
+    "text": "Architectural design is usually concerned with:",
+    "options": [
+      "The overall organization of a software system",
+      "The exact syntax of programming statements",
+      "The color of the user interface",
+      "The salaries of developers"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "Architectural design focuses on the big-picture organization and structure of a software system, not low-level implementation details like syntax, UI colors, or personnel matters."
+  },
+  {
+    "id": 127,
+    "text": "The output of the architectural design process is usually:",
+    "options": [
+      "Test cases",
+      "A software architectural model",
+      "Source code",
+      "User feedback forms"
+    ],
+    "correct": 1,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "The architectural design process produces an architectural model that describes the system's components, their responsibilities, and the communication interfaces between them."
+  },
+  {
+    "id": 128,
+    "text": "Architectural design acts as a link between:",
+    "options": [
+      "Coding and debugging",
+      "Requirements engineering and detailed design",
+      "Marketing and sales",
+      "Testing and deployment only"
+    ],
+    "correct": 1,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "Architectural design bridges requirements engineering (WHAT the system should do) and detailed design (HOW to build it), translating requirements into a structural blueprint."
+  },
+  {
+    "id": 129,
+    "text": "Which of the following is a major reason for documenting software architecture?",
+    "options": [
+      "To reduce the need for programming",
+      "To support stakeholder communication",
+      "To eliminate all software errors",
+      "To avoid requirements analysis"
+    ],
+    "correct": 1,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "Documented architecture enables communication among stakeholders (developers, customers, managers) about the system's structure, facilitating shared understanding."
+  },
+  {
+    "id": 130,
+    "text": "Which quality attribute is strongly affected by software architecture?",
+    "options": [
+      "Performance",
+      "Security",
+      "Maintainability",
+      "All of the above"
+    ],
+    "correct": 3,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "Architecture directly impacts all key quality attributes: performance (communication patterns), security (layering and component isolation), and maintainability (modularity)."
+  },
+  {
+    "id": 131,
+    "text": "A system with strong security requirements may use an architecture that:",
+    "options": [
+      "Places critical components in protected layers",
+      "Avoids authentication",
+      "Allows all components direct database access",
+      "Removes access control"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "Secure architectures place critical assets in inner, protected layers with controlled access paths, implementing defense in depth through layered security."
+  },
+  {
+    "id": 132,
+    "text": "A performance-critical system may require:",
+    "options": [
+      "More communication between distributed components",
+      "Fewer component interactions and less overhead",
+      "No architectural design",
+      "Only manual testing"
+    ],
+    "correct": 1,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "Performance-critical systems minimize component interactions, reduce communication overhead, and localize critical operations to avoid latency and bottlenecks."
+  },
+  {
+    "id": 133,
+    "text": "Which architectural view focuses on the key abstractions in the system?",
+    "options": [
+      "Logical view",
+      "Physical view",
+      "Development view",
+      "Deployment view"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "The logical view focuses on key abstractions, classes, objects, and the relationships between them - representing the functional requirements and object-oriented decomposition."
+  },
+  {
+    "id": 134,
+    "text": "Which architectural view shows how the software is distributed across hardware?",
+    "options": [
+      "Logical view",
+      "Physical view",
+      "Process view",
+      "Class view"
+    ],
+    "correct": 1,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "The physical view (deployment view) shows how software components are mapped to hardware nodes, processors, and devices in the physical infrastructure."
+  },
+  {
+    "id": 135,
+    "text": "Which architectural view is most useful for understanding run-time processes and interactions?",
+    "options": [
+      "Process view",
+      "Development view",
+      "Physical view",
+      "User view"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "The process view focuses on run-time behavior, showing processes, threads, communication, synchronization, and dynamic interactions during system execution."
+  },
+  {
+    "id": 136,
+    "text": "Which architectural view is mainly useful for programmers and project managers?",
+    "options": [
+      "Development view",
+      "Physical view",
+      "User interface view",
+      "Marketing view"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "The development view shows the system's module organization, software management, version control, and component dependencies - essential for programmers and project managers."
+  },
+  {
+    "id": 137,
+    "text": "An architectural pattern is best described as:",
+    "options": [
+      "A programming language rule",
+      "A reusable solution to a common architectural problem",
+      "A database table",
+      "A testing tool"
+    ],
+    "correct": 1,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "Architectural patterns provide proven, reusable solutions to recurring design problems, offering standardized structures for common architectural challenges."
+  },
+  {
+    "id": 138,
+    "text": "In a layered architecture:",
+    "options": [
+      "The system is organized into layers with different responsibilities",
+      "All components communicate randomly",
+      "There is no separation of concerns",
+      "Data is never passed between components"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "Layered architecture organizes the system into hierarchical layers, each with specific responsibilities, where each layer provides services to the layer above it."
+  },
+  {
+    "id": 139,
+    "text": "A major advantage of layered architecture is:",
+    "options": [
+      "It makes every system faster",
+      "It supports separation of concerns and maintainability",
+      "It removes the need for testing",
+      "It prevents all security problems"
+    ],
+    "correct": 1,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "Layered architecture supports separation of concerns by isolating different responsibilities into distinct layers, making the system more maintainable and modifiable."
+  },
+  {
+    "id": 140,
+    "text": "A possible disadvantage of layered architecture is:",
+    "options": [
+      "It can introduce performance overhead",
+      "It cannot be documented",
+      "It cannot support user interfaces",
+      "It cannot use databases"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "Layered architecture can introduce performance overhead because requests must pass through multiple layers, each adding processing time and data transformation."
+  },
+  {
+    "id": 141,
+    "text": "In a repository architecture:",
+    "options": [
+      "Components communicate through a central data store",
+      "Components never share data",
+      "The system has no database",
+      "Only one component exists"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "Repository architecture has a central data store (repository) where all components access and share data, enabling coordinated access to shared information."
+  },
+  {
+    "id": 142,
+    "text": "Repository architecture is especially suitable when:",
+    "options": [
+      "Large amounts of shared data are used",
+      "No data storage is required",
+      "The system has only one function",
+      "The software does not need maintenance"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "Repository architecture is ideal for systems where large volumes of data are generated, shared, and accessed by multiple components, such as database management systems."
+  },
+  {
+    "id": 143,
+    "text": "A disadvantage of repository architecture is that:",
+    "options": [
+      "The central repository can become a single point of failure",
+      "It prevents data sharing",
+      "It cannot store information",
+      "It does not support communication"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "The central repository is a single point of failure - if it crashes or becomes unavailable, the entire system stops functioning, creating reliability and availability risks."
+  },
+  {
+    "id": 144,
+    "text": "In a client-server architecture:",
+    "options": [
+      "Clients request services from servers",
+      "Servers request services from clients only",
+      "There is no network communication",
+      "All processing must happen on the client"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "Client-server architecture has clients that request services and servers that provide services, communicating over a network in a request-response pattern."
+  },
+  {
+    "id": 145,
+    "text": "Which system is a common example of client-server architecture?",
+    "options": [
+      "Web application",
+      "Standalone calculator",
+      "Printed textbook",
+      "Manual filing system"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "Web applications are classic client-server systems where browsers (clients) request resources from web servers, which process requests and return responses."
+  },
+  {
+    "id": 146,
+    "text": "In the Model-View-Controller pattern, the Model represents:",
+    "options": [
+      "The user interface only",
+      "The application data and business logic",
+      "The hardware device",
+      "The network cable"
+    ],
+    "correct": 1,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "The Model in MVC manages the application's data, business rules, logic, and state - it's the core data and domain representation independent of user interface."
+  },
+  {
+    "id": 147,
+    "text": "In MVC, the View is responsible for:",
+    "options": [
+      "Storing permanent business data",
+      "Displaying information to the user",
+      "Managing hardware memory",
+      "Compiling source code"
+    ],
+    "correct": 1,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "The View handles the presentation and display of information to users, showing the Model's data in a formatted, user-friendly way."
+  },
+  {
+    "id": 148,
+    "text": "In MVC, the Controller:",
+    "options": [
+      "Handles user input and updates the model or view",
+      "Stores the database permanently",
+      "Replaces all other components",
+      "Performs only security testing"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "The Controller processes user input (clicks, keystrokes), interprets user actions, and updates the Model or View accordingly, coordinating between them."
+  },
+  {
+    "id": 149,
+    "text": "The pipe-and-filter architecture is most suitable for:",
+    "options": [
+      "Data transformation systems",
+      "Systems with no input or output",
+      "Systems that never process data",
+      "Payroll systems only"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "Pipe-and-filter architecture excels at data transformation systems where input data flows through sequential processing components, each performing a specific transformation."
+  },
+  {
+    "id": 150,
+    "text": "In pipe-and-filter architecture:",
+    "options": [
+      "Data flows through a sequence of processing components",
+      "All data is stored in one central repository",
+      "The user interface controls all processing",
+      "Components cannot be reused"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "In pipe-and-filter, data flows through a pipeline of filters (processing components), connected by pipes that transfer data from one filter to the next."
+  },
+  {
+    "id": 151,
+    "text": "Which of the following is an example of a pipe-and-filter system?",
+    "options": [
+      "Compiler",
+      "Word processor toolbar",
+      "Login screen only",
+      "Payroll receipt"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "A compiler is a classic pipe-and-filter system: source code passes through lexical analysis, syntax analysis, semantic analysis, and code generation filters in sequence."
+  },
+  {
+    "id": 152,
+    "text": "Application architectures are useful because they:",
+    "options": [
+      "Provide generic structures for common types of applications",
+      "Remove the need for requirements",
+      "Replace programming languages",
+      "Guarantee zero defects"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "Application architectures offer reference architectures for common application types (web, mobile, data processing), providing proven structural templates to reuse."
+  },
+  {
+    "id": 153,
+    "text": "Transaction processing systems are mainly designed to:",
+    "options": [
+      "Process user requests that access or update information",
+      "Draw pictures only",
+      "Replace databases",
+      "Avoid user interaction"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "Transaction processing systems handle user requests that access or update data, ensuring ACID properties (Atomicity, Consistency, Isolation, Durability) for each transaction."
+  },
+  {
+    "id": 154,
+    "text": "Information systems usually include:",
+    "options": [
+      "User interface, application logic, and database",
+      "Only a database",
+      "Only a printer",
+      "Only source code comments"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "Information systems typically have three-tier architecture: user interface layer (presentation), business logic layer (application), and data storage layer (database)."
+  },
+  {
+    "id": 155,
+    "text": "Which architecture is commonly used for interactive systems?",
+    "options": [
+      "MVC architecture",
+      "Pipe-and-filter only",
+      "Batch-only architecture",
+      "No architecture"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "MVC (Model-View-Controller) is widely used for interactive systems because it cleanly separates user interface (View) from business logic (Model) and user input handling (Controller)."
+  },
+  {
+    "id": 156,
+    "text": "Batch processing systems are designed to:",
+    "options": [
+      "Process large volumes of data without continuous user interaction",
+      "Respond immediately to every user click",
+      "Avoid file handling",
+      "Run only on mobile phones"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "Batch processing systems process large volumes of data in batches without real-time user interaction, often scheduled for off-peak times (payroll, billing, report generation)."
+  },
+  {
+    "id": 157,
+    "text": "A transaction processing system usually requires:",
+    "options": [
+      "Reliability and data consistency",
+      "No database",
+      "No user requests",
+      "No validation"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "Transaction processing systems demand high reliability and data consistency to ensure transactions are processed correctly and data integrity is maintained (ACID properties)."
+  },
+  {
+    "id": 158,
+    "text": "A language processing system normally includes:",
+    "options": [
+      "Lexical analysis, syntax analysis, semantic analysis, and code generation",
+      "Only a user interface",
+      "Only database access",
+      "Only file printing"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "Language processing systems (compilers, interpreters) follow a standard pipeline: lexical analysis (tokenization), syntax analysis (parsing), semantic analysis (type checking), and code generation."
+  },
+  {
+    "id": 159,
+    "text": "Which architectural pattern separates the user interface from application data?",
+    "options": [
+      "Model-View-Controller",
+      "Pipe-and-filter",
+      "Repository only",
+      "Client-only architecture"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "MVC explicitly separates the user interface (View) from the application data (Model), enabling independent development, testing, and modification of each."
+  },
+  {
+    "id": 160,
+    "text": "One reason architecture is important for reuse is that:",
+    "options": [
+      "Common architectures can be reused across similar systems",
+      "Reuse is impossible in architecture",
+      "Architecture only applies to hardware",
+      "Reuse eliminates design decisions"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "Proven architectural patterns and reference architectures can be reused across multiple similar systems, saving design time and reducing risks."
+  },
+  {
+    "id": 161,
+    "text": "Which of the following is an architectural design decision?",
+    "options": [
+      "Choosing how system components are organized",
+      "Choosing the font size of comments",
+      "Choosing variable names only",
+      "Choosing keyboard shortcuts only"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "Architectural design decisions involve high-level structure: component organization, communication patterns, deployment strategies, and technology stack choices."
+  },
+  {
+    "id": 162,
+    "text": "Which question is most relevant during architectural design?",
+    "options": [
+      "Should the system be centralized or distributed?",
+      "What color should the logo be?",
+      "What is the developer's favorite IDE?",
+      "How many pages should the manual contain?"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "Architectural design addresses fundamental structural decisions like centralization vs. distribution, which affects performance, reliability, scalability, and security."
+  },
+  {
+    "id": 163,
+    "text": "Which of the following is a benefit of using architectural patterns?",
+    "options": [
+      "They provide proven solutions to recurring design problems",
+      "They remove all need for developers",
+      "They guarantee perfect performance",
+      "They prevent requirements changes"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "Architectural patterns encapsulate proven solutions that have successfully solved common design problems across many systems, reducing risk and design effort."
+  },
+  {
+    "id": 164,
+    "text": "Which statement best describes software architecture?",
+    "options": [
+      "It is the fundamental organization of a system and its components",
+      "It is only the final source code",
+      "It is only the user interface design",
+      "It is only the testing report"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "Software architecture is the fundamental organization of a system embodied in its components, their relationships to each other and to the environment, and the principles guiding its design."
+  },
+  {
+    "id": 165,
+    "text": "Which requirement type strongly influences architectural design?",
+    "options": [
+      "Non-functional requirements",
+      "Spelling requirements",
+      "File naming requirements only",
+      "Commenting style only"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "Non-functional requirements (performance, security, availability, maintainability) strongly influence architectural decisions because architecture directly enables or constrains these quality attributes."
+  },
+  {
+    "id": 166,
+    "text": "A government system must prevent unauthorized users from accessing citizen records. This is mainly a:",
+    "options": [
+      "Security requirement",
+      "Development requirement",
+      "Reliability requirement",
+      "Hardware requirement"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "Preventing unauthorized access to sensitive citizen records is a security requirement - a critical non-functional requirement that shapes the system's protective architecture."
+  },
+  {
+    "id": 167,
+    "text": "In a citizen service scenario, the presentation layer should mainly handle:",
+    "options": [
+      "User interaction and display",
+      "Direct hardware repair",
+      "Payroll approval",
+      "Compiler optimization"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "The presentation layer handles user interaction, display formatting, and input validation, serving as the user-facing interface component of a layered architecture."
+  },
+  {
+    "id": 168,
+    "text": "In a layered architecture, business rules are usually placed in the:",
+    "options": [
+      "Business logic layer",
+      "Presentation layer",
+      "Operating System layer",
+      "All the mentioned"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "Business rules and domain logic reside in the business logic layer (middle tier) of a layered architecture, separated from presentation and data access layers."
+  },
+  {
+    "id": 169,
+    "text": "A national records system where several services access a central citizen database is closest to which architectural pattern?",
+    "options": [
+      "Repository architecture",
+      "Pipe-and-filter architecture",
+      "Standalone calculator architecture",
+      "Random architecture"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "A central database accessed by multiple services is a repository architecture pattern, where the central data store (repository) is shared among all components."
+  },
+  {
+    "id": 170,
+    "text": "A citizen portal accessing a remote government database is an example of:",
+    "options": [
+      "Client-server architecture",
+      "Single-user spreadsheet architecture",
+      "Offline-only architecture",
+      "Compiler architecture"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "A web portal (client) accessing a remote database (server) follows the client-server architecture pattern, with the client making requests and the server providing data services."
+  },
+  {
+    "id": 171,
+    "text": "In a pipe-and-filter architecture, data is processed by:",
+    "options": [
+      "A sequence of processing components",
+      "A single user typing manually",
+      "One database table only",
+      "A printer queue"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "Pipe-and-filter processes data through a sequence of filters (processing components), each performing a specific transformation before passing data to the next filter."
+  },
+  {
+    "id": 172,
+    "text": "A document validation system that checks format, scans for viruses, extracts metadata, and stores results may use:",
+    "options": [
+      "Pipe-and-filter architecture",
+      "Client-server architecture",
+      "Repository architecture",
+      "No architecture"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "This document processing pipeline is ideal for pipe-and-filter: format checking filter → virus scanning filter → metadata extraction filter → storage filter."
+  },
+  {
+    "id": 173,
+    "text": "A deployment view mainly shows:",
+    "options": [
+      "How software components are placed on hardware or servers",
+      "The spelling of function names",
+      "The color of buttons",
+      "The personal opinions of users"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "The deployment view (physical view) maps software components to physical hardware nodes, servers, processors, and network infrastructure."
+  },
+  {
+    "id": 174,
+    "text": "A logical view mainly shows:",
+    "options": [
+      "The main functional components and their relationships",
+      "The office seating plan",
+      "The brand of computer monitors",
+      "The payroll system only"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "The logical view presents the system's functional components, key abstractions, classes, objects, and the relationships between them in a logical decomposition."
+  },
+  {
+    "id": 175,
+    "text": "A good architecture should make future changes easier. This supports:",
+    "options": [
+      "Maintainability",
+      "Randomness",
+      "Complexity for its own sake",
+      "Manual repetition"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "Maintainability is the ease with which a system can be modified to correct faults, improve performance, or adapt to changing environments - good architecture enables this."
+  },
+  {
+    "id": 176,
+    "text": "If a government system is expected to grow from 1,000 users to 1 million users, the architecture should consider:",
+    "options": [
+      "Scalability requirement",
+      "Maintainability requirement",
+      "Functional requirement",
+      "Development requirement"
+    ],
+    "correct": 0,
+    "category": "Chapter 6: Architectural Design",
+    "explanation": "Scalability - the ability to handle growing numbers of users or requests - is a non-functional requirement that must be architected from the start using appropriate patterns."
+  },
+  {
+    "id": 177,
+    "text": "Software testing is mainly used to:",
+    "options": [
+      "Prove that software has no defects",
+      "Show that software performs as required and discover defects",
+      "Replace software design",
+      "Eliminate the need for documentation"
+    ],
+    "correct": 1,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "Testing serves two purposes: validation (showing the system meets requirements) and defect testing (finding bugs). It cannot prove the absence of defects, only their presence."
+  },
+  {
+    "id": 178,
+    "text": "In Sommerville's view, testing is part of:",
+    "options": [
+      "Software validation and verification",
+      "Marketing only",
+      "Hardware installation only",
+      "User interface decoration"
+    ],
+    "correct": 0,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "Testing is a critical component of the broader Verification and Validation (V&V) process, which aims to ensure software quality and correctness."
+  },
+  {
+    "id": 179,
+    "text": "Verification asks the question:",
+    "options": [
+      "Are we building the product right?",
+      "Are we building the right product?",
+      "Is the project profitable?",
+      "Is the user interface colorful?"
+    ],
+    "correct": 0,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "Verification checks that the product is built correctly according to specifications - 'Are we building the product right?' (compliance with technical requirements)."
+  },
+  {
+    "id": 180,
+    "text": "Validation asks the question:",
+    "options": [
+      "Are we building the right product?",
+      "Is the programming language modern?",
+      "Are all programmers available?",
+      "Is the system expensive?"
+    ],
+    "correct": 0,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "Validation checks that the right product is built to meet user needs - 'Are we building the right product?' (fitness for purpose from user perspective)."
+  },
+  {
+    "id": 181,
+    "text": "The main goal of defect testing is to:",
+    "options": [
+      "Show that the software works perfectly",
+      "Discover faults in the software",
+      "Write user manuals",
+      "Increase system size"
+    ],
+    "correct": 1,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "Defect testing aims to discover faults, errors, and bugs in the software. A successful defect test is one that causes the system to fail, revealing a bug."
+  },
+  {
+    "id": 182,
+    "text": "Testing can show:",
+    "options": [
+      "The presence of defects",
+      "The complete absence of defects",
+      "That no maintenance is needed",
+      "That requirements are unnecessary"
+    ],
+    "correct": 0,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "Testing can demonstrate the presence of defects (by causing failures) but cannot prove their complete absence (Dijkstra's principle: testing shows presence, not absence of bugs)."
+  },
+  {
+    "id": 183,
+    "text": "Which of the following is a limitation of software testing?",
+    "options": [
+      "It can prove software is completely error-free",
+      "It cannot test every possible input and condition in most systems",
+      "It always removes all defects automatically",
+      "It replaces software inspections"
+    ],
+    "correct": 1,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "Exhaustive testing (testing all possible inputs and conditions) is impossible in most systems due to infinite input space, resource constraints, and time limitations."
+  },
+  {
+    "id": 184,
+    "text": "Software inspections are different from testing because inspections:",
+    "options": [
+      "Execute the program",
+      "Examine software documents or code without execution",
+      "Require only end users",
+      "Are done after deployment only"
+    ],
+    "correct": 1,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "Inspections are static verification techniques that examine code, requirements, or design documents without executing the program, unlike dynamic testing."
+  },
+  {
+    "id": 185,
+    "text": "Which activity is an example of static verification?",
+    "options": [
+      "Code inspection",
+      "Running a login test",
+      "Stress testing the server",
+      "Executing a payment transaction"
+    ],
+    "correct": 0,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "Code inspection is static verification - examining source code for defects without executing it. Running tests and executing transactions are dynamic verification."
+  },
+  {
+    "id": 186,
+    "text": "Which activity is an example of dynamic verification?",
+    "options": [
+      "Reading the requirements document",
+      "Executing the program with test data",
+      "Reviewing UML diagrams only",
+      "Checking spelling in documentation"
+    ],
+    "correct": 1,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "Executing the program with test data is dynamic verification - observing system behavior during execution. Document reading and reviews are static verification."
+  },
+  {
+    "id": 187,
+    "text": "Development testing is usually performed by:",
+    "options": [
+      "The development team",
+      "Customers only",
+      "Government auditors only",
+      "Marketing staff only"
+    ],
+    "correct": 0,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "Development testing is performed by the development team during the coding phase to discover bugs and defects before the system is released for independent testing."
+  },
+  {
+    "id": 188,
+    "text": "Development testing mainly includes:",
+    "options": [
+      "Unit testing",
+      "Component testing",
+      "System testing",
+      "All the mentioned"
+    ],
+    "correct": 3,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "Development testing encompasses all testing done during development: unit testing (individual units), component testing (groups of units), and system testing (integrated system)."
+  },
+  {
+    "id": 189,
+    "text": "Unit testing focuses on testing:",
+    "options": [
+      "Individual program units or classes",
+      "The entire organization",
+      "The final released system only",
+      "User training materials"
+    ],
+    "correct": 0,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "Unit testing tests individual, isolated components or classes in isolation to verify they work correctly independent of other system parts."
+  },
+  {
+    "id": 190,
+    "text": "In object-oriented systems, unit testing often focuses on:",
+    "options": [
+      "Classes and their methods",
+      "Office furniture",
+      "Network cables only",
+      "Project budgets"
+    ],
+    "correct": 0,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "In OO systems, unit testing focuses on individual classes and their methods, testing each method and class in isolation from other classes."
+  },
+  {
+    "id": 191,
+    "text": "Component testing focuses on:",
+    "options": [
+      "Groups of interacting units",
+      "Only the final user manual",
+      "Software price",
+      "Company policy"
+    ],
+    "correct": 0,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "Component testing tests integrated groups of units that work together, verifying that multiple related classes or modules function correctly as a component."
+  },
+  {
+    "id": 192,
+    "text": "System testing focuses on:",
+    "options": [
+      "Testing the complete integrated system",
+      "Testing only one function",
+      "Testing only comments in code",
+      "Testing only database names"
+    ],
+    "correct": 0,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "System testing tests the complete, fully integrated system as a whole, verifying that all components work together to meet overall requirements."
+  },
+  {
+    "id": 193,
+    "text": "In system testing, testers are especially interested in:",
+    "options": [
+      "Interactions between components",
+      "Font style in comments",
+      "Programmer salaries",
+      "Office location"
+    ],
+    "correct": 0,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "System testing focuses on component interactions, data flow between modules, and emergent behaviors that only appear when the complete system runs."
+  },
+  {
+    "id": 194,
+    "text": "Which of the following is most likely to be found during system testing?",
+    "options": [
+      "Errors in component interaction",
+      "Spelling errors in variable names only",
+      "Missing chairs in the office",
+      "Wrong company logo only"
+    ],
+    "correct": 0,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "System testing reveals integration and interaction bugs - problems in how components communicate, share data, and coordinate that unit tests cannot detect."
+  },
+  {
+    "id": 195,
+    "text": "In test-driven development, tests are written:",
+    "options": [
+      "Before the code is written",
+      "Only after system delivery",
+      "Only by the customer",
+      "After maintenance ends"
+    ],
+    "correct": 0,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "TDD (Test-Driven Development) writes the test first, then writes just enough code to pass the test - tests precede implementation."
+  },
+  {
+    "id": 196,
+    "text": "The usual test-driven development cycle is:",
+    "options": [
+      "Write test, write code, run test, refactor",
+      "Write full system, ignore tests, deploy",
+      "Deploy first, design later",
+      "Test only after the customer complains"
+    ],
+    "correct": 0,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "The TDD cycle: 1) Write a failing test, 2) Write minimal code to pass it, 3) Run test (should pass), 4) Refactor code, 5) Repeat."
+  },
+  {
+    "id": 197,
+    "text": "In TDD, a new feature is complete when:",
+    "options": [
+      "Its tests pass",
+      "The programmer says it is complete without testing",
+      "The code is long enough",
+      "The system has no documentation"
+    ],
+    "correct": 0,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "In TDD, a feature is complete only when all corresponding tests pass, providing measurable, objective evidence of correctness."
+  },
+  {
+    "id": 198,
+    "text": "One advantage of test-driven development is that it:",
+    "options": [
+      "Produces a set of automated tests",
+      "Removes the need for design completely",
+      "Guarantees zero defects",
+      "Eliminates all maintenance costs"
+    ],
+    "correct": 0,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "TDD builds a comprehensive suite of automated tests alongside the code, enabling regression testing and providing safety for future changes."
+  },
+  {
+    "id": 199,
+    "text": "Release testing is usually performed to check whether:",
+    "options": [
+      "The system is good enough for external release",
+      "The programmer can type quickly",
+      "The company logo is attractive",
+      "The project manager likes the interface"
+    ],
+    "correct": 0,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "Release testing (pre-release testing) evaluates whether the system is sufficiently reliable, functional, and usable for release to external users or customers."
+  },
+  {
+    "id": 200,
+    "text": "Release testing is usually a form of:",
+    "options": [
+      "Black-box testing",
+      "White-box testing only",
+      "Code inspection only",
+      "Compiler testing only"
+    ],
+    "correct": 0,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "Release testing typically uses black-box testing - testing against requirements and specifications without knowledge of internal code structure."
+  },
+  {
+    "id": 201,
+    "text": "In release testing, testers mainly test the system against:",
+    "options": [
+      "System requirements",
+      "Programmer preferences",
+      "Office rules",
+      "Keyboard layout"
+    ],
+    "correct": 0,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "Release testing validates that the implemented system meets the documented system requirements, proving fitness for purpose."
+  },
+  {
+    "id": 202,
+    "text": "Release testing should normally be performed by:",
+    "options": [
+      "A separate testing team",
+      "Only the original programmer",
+      "Only the end user's family",
+      "Marketing staff only"
+    ],
+    "correct": 0,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "Release testing should be done by an independent testing team (not the developers) to provide objective, unbiased evaluation without developer assumptions or blindness."
+  },
+  {
+    "id": 203,
+    "text": "Black-box testing means testing the software by focusing on:",
+    "options": [
+      "Inputs and outputs without knowing internal code structure",
+      "Internal program statements only",
+      "The color of the software box",
+      "The programmer's design notes only"
+    ],
+    "correct": 0,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "Black-box testing treats the system as an opaque box, testing only inputs and expected outputs based on requirements, ignoring internal implementation."
+  },
+  {
+    "id": 204,
+    "text": "White-box testing means testing the software by focusing on:",
+    "options": [
+      "The internal structure and logic of the code",
+      "Only the system requirements",
+      "Only the user interface",
+      "Only the user manual"
+    ],
+    "correct": 0,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "White-box (glass-box) testing examines the internal structure, logic paths, branches, and statements of the code to ensure comprehensive coverage."
+  },
+  {
+    "id": 205,
+    "text": "Which technique is commonly associated with black-box testing?",
+    "options": [
+      "Equivalence partitioning",
+      "Code path coverage only",
+      "Statement coverage only",
+      "Loop inspection only"
+    ],
+    "correct": 0,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "Equivalence partitioning is a black-box technique that divides input data into groups (equivalence classes) expected to produce similar results, reducing test cases."
+  },
+  {
+    "id": 206,
+    "text": "Equivalence partitioning divides input data into:",
+    "options": [
+      "Groups expected to behave similarly",
+      "Random passwords",
+      "Programming languages",
+      "Hardware devices"
+    ],
+    "correct": 0,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "Equivalence partitioning groups inputs into partitions where any value in a partition is expected to produce equivalent system behavior, reducing redundant test cases."
+  },
+  {
+    "id": 207,
+    "text": "Structural testing is another name for:",
+    "options": [
+      "White-box testing",
+      "Black-box testing",
+      "Acceptance testing only",
+      "User testing only"
+    ],
+    "correct": 0,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "Structural testing (white-box testing) focuses on the code structure, paths, branches, and statements, unlike functional (black-box) testing."
+  },
+  {
+    "id": 208,
+    "text": "Acceptance testing is mainly performed to decide whether:",
+    "options": [
+      "The system is acceptable to the customer",
+      "The source code is long enough",
+      "The software is expensive enough",
+      "The office has enough computers"
+    ],
+    "correct": 0,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "Acceptance testing is the final validation stage where customers determine whether the system meets their needs and is acceptable for deployment and use."
+  },
+  {
+    "id": 209,
+    "text": "Alpha testing is usually carried out:",
+    "options": [
+      "At the developer's site with users or testers",
+      "After the system is used for ten years",
+      "Only by competitors",
+      "Without executing the system"
+    ],
+    "correct": 0,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "Alpha testing occurs at the developer's site with a controlled group of users or testers, before releasing to external beta testers."
+  },
+  {
+    "id": 210,
+    "text": "Beta testing is usually carried out:",
+    "options": [
+      "By selected users in their own environment",
+      "Only by the programmer at home",
+      "Only by the compiler",
+      "Before any code exists"
+    ],
+    "correct": 0,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "Beta testing releases the software to selected real users who test it in their own environments, discovering real-world issues not found in controlled testing."
+  },
+  {
+    "id": 211,
+    "text": "User testing is important because:",
+    "options": [
+      "Users may discover problems not found by developers",
+      "Users always know the source code",
+      "Users replace all developers",
+      "Users remove the need for requirements"
+    ],
+    "correct": 0,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "User testing reveals usability issues, workflow mismatches, and unexpected use cases that developers might miss because they're too familiar with the system."
+  },
+  {
+    "id": 212,
+    "text": "In acceptance testing, test cases are often derived from:",
+    "options": [
+      "User requirements and business scenarios",
+      "Programmer hobbies",
+      "Keyboard type",
+      "Office decoration"
+    ],
+    "correct": 0,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "Acceptance test cases are derived from user requirements, business scenarios, and use cases that represent real user tasks and goals."
+  },
+  {
+    "id": 213,
+    "text": "Regression testing is performed to check whether:",
+    "options": [
+      "Changes have introduced new defects into existing functionality",
+      "The software price has increased",
+      "The programmer changed office",
+      "The system logo is larger"
+    ],
+    "correct": 0,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "Regression testing re-executes previously passed tests after changes to ensure that new code hasn't broken existing functionality (no regression)."
+  },
+  {
+    "id": 214,
+    "text": "Automated testing is especially useful for:",
+    "options": [
+      "Repeated regression testing",
+      "Replacing all requirements",
+      "Removing all defects automatically",
+      "Avoiding software design"
+    ],
+    "correct": 0,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "Automated testing excels at frequent, repeatable regression testing - running many tests quickly and consistently every time code changes."
+  },
+  {
+    "id": 215,
+    "text": "When a bug is fixed, regression testing helps ensure that:",
+    "options": [
+      "The fix has not broken other parts of the system",
+      "The programmer has written fewer comments",
+      "The system is now impossible to hack",
+      "The software no longer needs maintenance"
+    ],
+    "correct": 0,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "Regression testing verifies that fixing one bug hasn't introduced new bugs elsewhere, maintaining overall system quality."
+  },
+  {
+    "id": 216,
+    "text": "Which of the following is a non-functional requirement that strongly affects system design?",
+    "options": [
+      "The system shall register a new user",
+      "The system shall calculate tax",
+      "The system shall respond within two seconds",
+      "The system shall print a receipt"
+    ],
+    "correct": 2,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "Response time is a non-functional performance requirement that strongly affects architectural decisions like caching, load balancing, and resource allocation."
+  },
+  {
+    "id": 217,
+    "text": "A system that must continue working even when some components fail should emphasize:",
+    "options": [
+      "Reliability and fault tolerance",
+      "Scalability",
+      "Maintainability",
+      "All the mentioned"
+    ],
+    "correct": 0,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "Fault tolerance and reliability are critical for systems that must operate despite component failures - achieved through redundancy, graceful degradation, and error recovery."
+  },
+  {
+    "id": 218,
+    "text": "The main advantage of decomposing a system into subsystems is:",
+    "options": [
+      "It makes the system easier to understand, develop, and maintain",
+      "It guarantees that no defects will occur",
+      "It removes the need for interfaces",
+      "It prevents reuse"
+    ],
+    "correct": 0,
+    "category": "Chapter 8: Software Testing",
+    "explanation": "Decomposition (divide and conquer) breaks complex systems into manageable subsystems, improving understanding, parallel development, and maintainability through separation of concerns."
+  },
+  {
+    "id": 219,
+    "text": "A model showing how the system interacts with its environment is called a:",
+    "options": [
+      "Context model",
+      "State model",
+      "Activity model",
+      "Structural model"
+    ],
+    "correct": 0,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "Context models (context diagrams) show the system boundary and its interactions with external entities (users, systems, devices) without internal detail."
+  },
+  {
+    "id": 220,
+    "text": "A model showing system responses to external events is usually a:",
+    "options": [
+      "Behavioral model",
+      "Development model",
+      "Budget model",
+      "Structural model"
+    ],
+    "correct": 0,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "Behavioral models (state machine diagrams, activity diagrams) show how the system responds to external events, changing state and performing actions."
+  },
+  {
+    "id": 221,
+    "text": "A model showing the organization of system data or objects is usually a:",
+    "options": [
+      "Structural model",
+      "Advertising model",
+      "Development model",
+      "Behavioral model"
+    ],
+    "correct": 0,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "Structural models (class diagrams, component diagrams) show the static organization of data, objects, classes, and relationships in the system."
+  },
+  {
+    "id": 222,
+    "text": "A model showing communication between users and the system is usually an:",
+    "options": [
+      "Interaction model",
+      "Behavioral model",
+      "Structural model",
+      "Development model"
+    ],
+    "correct": 0,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "Interaction models (use case diagrams, sequence diagrams) show communication patterns between users (actors) and the system, or between system objects."
+  },
+  {
+    "id": 223,
+    "text": "Scenario: A student logs in, selects a course, checks availability, registers, and receives confirmation. Which diagram best shows the message flow between objects?",
+    "options": [
+      "Sequence diagram",
+      "Class diagram",
+      "Deployment diagram",
+      "Package diagram"
+    ],
+    "correct": 0,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "A sequence diagram best shows message flow between objects over time, with lifelines for each object and arrows representing messages in chronological order."
+  },
+  {
+    "id": 224,
+    "text": "Scenario: A course registration system has classes such as Student, Course, and Registration. Which model best represents this?",
+    "options": [
+      "Class diagram",
+      "Activity diagram",
+      "State diagram",
+      "Context diagram"
+    ],
+    "correct": 0,
+    "category": "Chapter 5: System Modeling",
+    "explanation": "A class diagram best represents the classes (Student, Course, Registration), their attributes, methods, and the relationships between them (associations, multiplicities)."
   }
 ]
